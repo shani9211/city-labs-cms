@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>통합고객관리포털 -CMS</title>
+    <!--favicon-->
+    <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon" />
+    <!-- Vector CSS -->
+    <link
+      href="../assets/plugins/vectormap/jquery-jvectormap-2.0.2.css"
+      rel="stylesheet"
+    />
+    <!-- simplebar CSS-->
+    <link
+      href="../assets/plugins/simplebar/css/simplebar.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap core CSS-->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- animate CSS-->
+    <link href="../assets/css/animate.css" rel="stylesheet" type="text/css" />
+    <!-- Icons CSS-->
+    <link href="../assets/css/icons.css" rel="stylesheet" type="text/css" />
+    <!-- Sidebar CSS-->
+    <link href="../assets/css/sidebar-menu.css" rel="stylesheet" />
+    <!-- Custom Style-->
+    <link href="../assets/css/app-style.css" rel="stylesheet" />
+    <!-- skins CSS-->
+    <link href="../assets/css/skins.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="../assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css"
+    />
+
+    <!-- custome CSS -->
+    <!-- <link href="../assets/css/corporate-user.css" rel="stylesheet" /> -->
+    <link href="../assets/css/individual-member.css" rel="stylesheet" />
+    <link href="../assets/css/topheader.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Start wrapper-->
+    <div id="wrapper">
+      <!--Start topbar header-->
+      <header class="topbar-nav">
+        <nav id="header-setting" class="navbar navbar-expand fixed-top">
+          <div class="logo">
+            <a class="navbar-brand" href="#">
+              <img src="../assets/images/logo.svg" alt="logo" />
+            </a>
+          </div>
+          <ul class="navbar-nav ml-3 mr-auto align-items-center">
+            <li class="nav-item">
+              <img src="../assets/images/home-icon.svg" alt="" class="ml-2" />
+            </li>
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="../dashboard.html">메인</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="javaScript:void();">KP-DID관리</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="individual-user.html">개인회원</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="individual-user.html">발급목록</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                상세보기
+              </li>
+            </ol>
+          </ul>
+
+          <ul class="navbar-nav navlogin">
+            <li class="nav-item menu-right-1">
+              <a class="nav-link" href="#">2021-07-21 수요일 </a>
+            </li>
+            <li class="nav-item vertical-border">|</li>
+            <!-- <li class="nav-item menu-right-2">
+            <a class="nav-link" href="#">로그인</a>
+          </li> -->
+            <li class="nav-item menu-right-2">
+              <a
+                class="nav-link dropdown-toggle dropdown-toggle-nocaret"
+                data-toggle="dropdown"
+                href="#"
+                >홍길동(관리자)
+                <!-- <span class="user-profile"
+                ><img
+                  src="assets/images/login-user-img.png"
+                  class="img-circle"
+                  alt="user avatar"
+              /></span> -->
+              </a>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li class="dropdown-item user-details">
+                  <a href="javaScript:void();">
+                    <div class="media">
+                      <div class="avatar">
+                        <img
+                          class="align-self-start mr-3"
+                          src="../assets/images/login-user-img.png"
+                          alt="user avatar"
+                        />
+                      </div>
+                      <div class="media-body">
+                        <h6 class="mt-2 user-title">스콧 리</h6>
+                        <p class="user-subtitle">mccoy@example.com</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="dropdown-divider"></li>
+                <!-- <li class="dropdown-item">
+                <i class="icon-envelope mr-2"></i> Profile
+              </li> -->
+                <li class="dropdown-divider"></li>
+                <li class="dropdown-item">
+                  <i class="icon-wallet mr-2"></i> 프로필
+                </li>
+                <li class="dropdown-divider"></li>
+                <li class="dropdown-item">
+                  <i class="icon-settings mr-2"></i> 환경
+                </li>
+                <li class="dropdown-divider"></li>
+                <li class="dropdown-item">
+                  <i class="icon-power mr-2"></i> 로그 아웃
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!--End topbar header-->
+      <!--Start sidebar-wrapper-->
+      <div
+        id="sidebar-wrapper"
+        data-simplebar=""
+        data-simplebar-auto-hide="true"
+      >
+        <ul class="sidebar-menu">
+          <li>
+            <a href="/dashboard.html" class="waves-effect">
+              <img
+                src="../assets/images/dashboard-icon.svg"
+                alt=""
+                class="custom-icon"
+              />
+              <span>대시보드</span>
+              <i class="fa fa-angle-right pull-right menu-icon mt-1"></i>
+            </a>
+          </li>
+          <li>
+            <a href="javaScript:void();" class="waves-effect">
+              <img
+                src="../assets/images/kp_did.svg"
+                alt=""
+                class="custom-icon"
+              />
+              <span>KP-DID 관리</span>
+              <i class="fa fa-angle-right pull-right menu-icon"></i>
+            </a>
+            <ul class="sidebar-submenu">
+              <li>
+                <a href="../KPDID/individual-user.html">개인회원</a>
+              </li>
+              <li>
+                <a href="../KPDID/corporate-user.html">법인회원</a>
+              </li>
+              <li>
+                <a href="../KPDID/corporate-approval.html">법인승인</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javaScript:void();" class="waves-effect">
+              <img
+                src="../assets/images/insmange.svg"
+                alt=""
+                class="custom-icon"
+              />
+              <span>기관관리</span>
+              <i class="fa fa-angle-right pull-right menu-icon"></i>
+            </a>
+            <ul class="sidebar-submenu">
+              <li>
+                <a href="../InstitutionManagement/issuing-institution.html"
+                  >기관 관리</a
+                >
+              </li>
+              <li>
+                <a href="../InstitutionManagement/verifying-institution.html"
+                  >검증기관</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="javaScript:void();" class="waves-effect">
+              <img
+                src="../assets/images/certificate_mange.svg"
+                alt=""
+                class="custom-icon"
+              />
+              <span>인증서관리</span>
+              <i class="fa fa-angle-right pull-right menu-icon"></i>
+            </a>
+            <ul class="sidebar-submenu">
+              <li>
+                <a
+                  href="../CertificateManagement/certificate-individual-user.html"
+                  >개인회원</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../CertificateManagement/certificate-corporate-user.html"
+                  >법인회원</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javaScript:void();" class="waves-effect">
+              <img
+                src="../assets/images/blockchain.svg"
+                alt=""
+                class="custom-icon"
+              />
+              <span>블록체인</span>
+              <i class="fa fa-angle-right pull-right menu-icon"></i>
+            </a>
+            <ul class="sidebar-submenu">
+              <li>
+                <a href="../Blockchain/blockchain.html" onclick="myFunction()"
+                  >블록체인</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javaScript:void();" class="waves-effect">
+              <img
+                src="../assets/images/mydata.svg"
+                alt=""
+                class="custom-icon"
+              />
+              <span>마이데이터</span>
+              <i class="fa fa-angle-right pull-right menu-icon"></i>
+            </a>
+            <ul class="sidebar-submenu">
+              <li>
+                <a href="../mydata/mydata.html">마이데이터</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javaScript:void();" class="waves-effect">
+              <img
+                src="../assets/images/report.svg"
+                alt=""
+                class="custom-icon"
+              />
+              <span>리포트</span>
+              <i class="fa fa-angle-right pull-right menu-icon"></i>
+            </a>
+            <ul class="sidebar-submenu">
+              <li>
+                <a href="../Report/individual-user.html">개인회원</a>
+              </li>
+              <li>
+                <a href="../Report/corporate-user.html">법인회원</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javaScript:void();" class="waves-effect">
+              <img
+                src="../assets/images/opsmange.svg"
+                alt=""
+                class="custom-icon"
+              />
+              <span>운영관리</span>
+              <i class="fa fa-angle-right pull-right menu-icon"></i>
+            </a>
+            <ul class="sidebar-submenu">
+              <li>
+                <a href="../OperationManagement/operations-management.html"
+                  >운영관리</a
+                >
+              </li>
+              <li>
+                <a href="../OperationManagement/faq.html">FAQ</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javaScript:void();" class="waves-effect">
+              <img
+                src="../assets/images/settings.svg"
+                alt=""
+                class="custom-icon"
+              />
+              <span>설정</span>
+              <i class="fa fa-angle-right pull-right menu-icon"></i>
+            </a>
+            <ul class="sidebar-submenu">
+              <li>
+                <a href="../Settings/institutions-list.html">기관목록</a>
+              </li>
+              <li>
+                <a href="../Settings/users-list.html">사용자목록</a>
+              </li>
+
+              <li>
+                <a href="../Settings/authorization-settings.html">권한설정</a>
+              </li>
+              <li>
+                <a href="../Settings/access-history.html">접속이력</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!--End sidebar-wrapper-->
+      <div class="clearfix"></div>
+
+      <!-----------------------------------Start  Dashboard section content-wrapper---------------------->
+
+      <div class="content-wrapper">
+        <div class="container-fluid">
+          <!-- Individual page  Content-->
+          <!--First  Row-->
+          <div class="row">
+            <div class="col-lg-12 main-card-section">
+              <div class="card-section mt-2">
+                <div class="card-body card-body-section">
+                  <ul class="nav nav-tabs nav-tabs-primary">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active"
+                        data-toggle="tab"
+                        href="#tabe-1"
+                      >
+                        <span class="hidden-xs" style="font-size: 20px"
+                          >발급목록</span
+                        ></a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-toggle="tab" href="#tabe-2">
+                        <span class="hidden-xs" style="font-size: 20px"
+                          >폐기 목록</span
+                        ></a
+                      >
+                    </li>
+                  </ul>
+
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <div id="tabe-1" class="tab-pane active">
+                      <div class="row">
+                        <div class="col-md-12 mt-4">
+                          <ul class="nav">
+                            <li class="nav-item"><h5>회원정보</h5></li>
+                            <li class="nav-item ml-auto">
+                              <a
+                                href="individual-user.html"
+                                class="nav-link text-right"
+                                style="text-decoration: underline"
+                                >뒤로가기</a
+                              >
+                            </li>
+                          </ul>
+                          <div class="card mt-2">
+                            <div class="card-body">
+                              <form id="userProfile">
+                                <div class="form-group row">
+                                  <label
+                                    for="input-10"
+                                    class="col-sm-2 col-form-label"
+                                    >이름</label
+                                  >
+                                  <div class="col-sm-4">
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      id="input-10"
+                                      name="홍길동"
+                                      value="홍길동"
+                                      disabled
+                                    />
+                                  </div>
+                                  <label
+                                    for="input-11"
+                                    class="col-sm-2 col-form-label"
+                                    >내외국인</label
+                                  >
+                                  <div class="col-sm-4">
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      id="input-11"
+                                      name="내국인"
+                                      value="내국인"
+                                      disabled
+                                    />
+                                  </div>
+                                </div>
+                                <div class="form-group row">
+                                  <label
+                                    for="input-12"
+                                    class="col-sm-2 col-form-label"
+                                    >생년월일</label
+                                  >
+                                  <div class="col-sm-4">
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      id="input-12"
+                                      name="dateof_birth"
+                                      value="1990.01.01"
+                                      disabled
+                                    />
+                                  </div>
+                                  <label
+                                    for="input-13"
+                                    class="col-sm-2 col-form-label"
+                                    >성별</label
+                                  >
+                                  <div class="col-sm-4">
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      id="input-13"
+                                      name="gender"
+                                      value="남"
+                                      disabled
+                                    />
+                                  </div>
+                                </div>
+
+                                <div class="form-group row">
+                                  <label
+                                    for="input-14"
+                                    class="col-sm-2 col-form-label"
+                                    >휴대폰번호</label
+                                  >
+                                  <div class="col-sm-4">
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      id="input-14"
+                                      name="phone_numer"
+                                      value="010-1234-5678"
+                                      disabled
+                                    />
+                                  </div>
+                                  <label
+                                    for="input-15"
+                                    class="col-sm-2 col-form-label"
+                                    >이메일</label
+                                  >
+                                  <div class="col-sm-4">
+                                    <input
+                                      type="email"
+                                      class="form-control"
+                                      id="input-15"
+                                      name="email"
+                                      value="post@epost.co.kr"
+                                      value="shani@1234.com"
+                                      disabled
+                                    />
+                                  </div>
+                                </div>
+
+                                <div class="form-group row">
+                                  <label
+                                    for="input-14"
+                                    class="col-sm-2 col-form-label"
+                                    >PI</label
+                                  >
+                                  <div class="col-sm-4">
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      id="input-14"
+                                      name="pi"
+                                      value="KR alkfandfladfasknfla001"
+                                      disabled
+                                    />
+                                  </div>
+                                  <label
+                                    for="input-15"
+                                    class="col-sm-2 col-form-label"
+                                    >KP-DID</label
+                                  >
+                                  <div class="col-sm-4">
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      id="input-15"
+                                      name="kp_did"
+                                      value="0x000000i2nvi2n2nv8u2inaisdiaf001"
+                                      disabled
+                                    />
+                                  </div>
+                                </div>
+
+                                <div class="form-group row">
+                                  <label
+                                    for="input-14"
+                                    class="col-sm-2 col-form-label"
+                                    >발급일시</label
+                                  >
+                                  <div class="col-sm-4">
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      id="input-14"
+                                      name="issue_date"
+                                      value="2021.07.20  12:55:56"
+                                      disabled
+                                    />
+                                  </div>
+                                  <label
+                                    for="input-15"
+                                    class="col-sm-2 col-form-label"
+                                    >상태</label
+                                  >
+                                  <div class="col-sm-4">
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      id="input-15"
+                                      name="state"
+                                      value="발급완료"
+                                      disabled
+                                    />
+                                  </div>
+                                </div>
+                              </form>
+                              <div class="row text-right">
+                                <div class="col-sm-12">
+                                  <!-- <button  type="button" id="popup_button" data-toggle="modal" > 폐기</button> -->
+                                  <a
+                                    href="#myModal"
+                                    class="disposal_card"
+                                    data-toggle="modal"
+                                  >
+                                    폐기
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <h5>인증서(VC)목록</h5>
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="table-responsive">
+                          <table
+                            class="table align-items-center no-border-top-table"
+                          >
+                            <thead>
+                              <th>인증서</th>
+                              <th>발급일시</th>
+                              <th>발급상태</th>
+                              <th>관리</th>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>개인인증서</td>
+                                <td>2021.07.21 12:58:56</td>
+                                <td>발급완료</td>
+                                <td>
+                                  <a
+                                    href="#certificate_discard"
+                                    class="disposal_card"
+                                    data-toggle="modal"
+                                    >폐기</a
+                                  >
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>개인인증서</td>
+                                <td>2021.07.21 12:58:56</td>
+                                <td>발급완료</td>
+                                <td>
+                                  <a
+                                    href="#certificate_discard"
+                                    class="disposal_card"
+                                    data-toggle="modal"
+                                    >폐기</a
+                                  >
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="tabe-2" class="tab-pane fade disabled">
+                    <!-- <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <p>It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End container-fluid-->
+      </div>
+      <!----------------------------------------End Dashboard section content-wrapper -->
+
+      <!-- KPDID Profile disposal  Modal start -->
+      <!-- The Modal -->
+      <div class="modal" id="myModal">
+        <div class="modal-dialog modal-dialog-centered custom-modal-width">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5
+                class="modal-title"
+                style="line-height: 30px; font-size: 20px"
+              >
+                홍길동 회원님의 KP-DID를 폐기하시겠습니까?
+              </h5>
+            </div>
+            <div class="modal-body">
+              <h6 class="mb-1">폐기사유</h6>
+              <form id="disposal_form">
+                <div class="form-group">
+                  <label for="comment"></label>
+                  <textarea
+                    class="form-control disposal-textarea"
+                    rows="5"
+                    id="comment"
+                    onmouseover="displaymessage()"
+                    placeholder="폐기사유를 입력해 주세요."
+                    required
+                  ></textarea>
+                </div>
+                <div class="mt-3">
+                  <h6>주의사항</h6>
+                </div>
+                <div class="confirmation_message" id="message"></div>
+                <div class="icheck-material-primary">
+                  <input type="checkbox" id="user-checkbox" checked="" />
+                  <label for="user-checkbox"
+                    ><span style="font-size: 17px; line-height: 22px">
+                      폐기주의사항을 확인했습니다.</span
+                    >
+                  </label>
+                </div>
+                <div class="validation_message" id="validation_message"></div>
+              </form>
+            </div>
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <div class="row modal-footer-row">
+                <div class="col-lg-6 text-right">
+                  <button
+                    type="button"
+                    class="btn btn-light disposal-cancel"
+                    data-dismiss="modal"
+                  >
+                    취소
+                  </button>
+                </div>
+                <div class="col-lg-6 text-left">
+                  <!-- <button type="button" id="disposal" class="btn btn-primary disposal-success"  onclick="disposalSubmit()">폐기 </button> -->
+                  <!-- <button type="button" class="btn btn-danger" id="shani" onclick="myfunction()" data-dismiss="modal">Close</button> -->
+                  <button
+                    type="button"
+                    id="blur-button"
+                    class="btn btn-primary disposal-success"
+                    onclick="$('#cnf-popup-3').modal('show')"
+                  >
+                    생성
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- KPDID Profile disposal confirmation  Modal start -->
+      <div
+        class="modal fade"
+        id="cnf-popup-3"
+        data-backdrop="static"
+        data-keyboard="false"
+        tabindex="-1"
+        role="dialog"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content modal-confirmation-1">
+            <div class="modal-body disposal-confirmation-text">
+              <h6>수정내용을 저장 하시겠습니까?</h6>
+            </div>
+            <div class="modal-footer">
+              <div class="row modal-footer-row">
+                <div class="col-lg-6 text-right">
+                  <button
+                    type="button"
+                    class="btn btn-light disposal-cancel"
+                    data-dismiss="modal"
+                    id="remove-blur"
+                  >
+                    취소
+                  </button>
+                </div>
+                <div class="col-lg-6 text-left">
+                  <button
+                    type="button"
+                    class="btn btn-primary disposal-success"
+                    onclick="$('#cnf-popup-3').modal('show')"
+                  >
+                    생성
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPDID Profile disposal confirmation  Modal start -->
+      <!-- KPDID Profile disposal  Modal end -->
+
+      <!-- KPDID Certificate List  Start-->
+      <div class="modal" id="certificate_discard">
+        <div class="modal-dialog modal-dialog-centered custom-modal-width">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5
+                class="modal-title"
+                style="line-height: 30px; font-size: 20px"
+              >
+                홍길동 회원님의 KP-DID를 폐기하시겠습니까?
+              </h5>
+            </div>
+            <div class="modal-body">
+              <h4 class="mb-1">폐기사유</h4>
+              <form id="certificate_discard_form">
+                <div class="form-group">
+                  <label for="discard_comment"></label>
+                  <textarea
+                    class="form-control disposal-textarea"
+                    rows="5"
+                    id="discard_comment"
+                    placeholder="폐기사유를 입력해 주세요.."
+                    required
+                  ></textarea>
+                </div>
+                <div class="confirmation_message mt-3" id="message1">
+                  <h5>주의사항</h5>
+                  - 폐기된 인증서는 복구할 수 없으며 더 이상 사용이 불가합니다.
+                </div>
+                <div class="icheck-material-primary">
+                  <input type="checkbox" id="user-checkbox" checked="" />
+                  <label for="user-checkbox"
+                    ><span style="font-size: 17px; line-height: 22px">
+                      폐기주의사항을 확인했습니다.</span
+                    >
+                  </label>
+                </div>
+                <div
+                  class="validation_message"
+                  id="certificate_discard_validation_message"
+                ></div>
+              </form>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <div class="row modal-footer-row">
+                <div class="col-lg-6 text-right">
+                  <button
+                    type="button"
+                    class="btn btn-light disposal-cancel"
+                    data-dismiss="modal"
+                  >
+                    취소
+                  </button>
+                </div>
+                <div class="col-lg-6 text-left">
+                  <!-- <button type="button" id="certificate_disposal " class="btn btn-primary disposal-success"  onclick="certificate_discard()">폐기 </button> -->
+                  <button
+                    type="button"
+                    id="blur-button2"
+                    class="btn btn-primary disposal-success"
+                    onclick="$('#certifiate-cnf-popup').modal('show')"
+                  >
+                    폐기
+                  </button>
+                  <!-- <button type="button" class="btn btn-danger" id="shani" onclick="myfunction()" data-dismiss="modal">Close</button> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPDID certificate List disposal confirmation  Modal start -->
+      <div
+        class="modal fade"
+        id="certifiate-cnf-popup"
+        data-backdrop="static"
+        data-keyboard="false"
+        tabindex="-1"
+        role="dialog"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content modal-confirmation-1">
+            <div class="modal-body disposal-confirmation-text">
+              <h6>폐기하시겠습니까</h6>
+            </div>
+            <div class="modal-footer">
+              <div class="row modal-footer-row">
+                <div class="col-lg-6 text-right">
+                  <button
+                    type="button"
+                    class="btn btn-light disposal-cancel"
+                    data-dismiss="modal"
+                    id="remove-blur2"
+                  >
+                    취소
+                  </button>
+                </div>
+                <div class="col-lg-6 text-left">
+                  <button
+                    type="button"
+                    class="btn btn-primary disposal-success"
+                    onclick="$('#cnf-popup-4').modal('show')"
+                  >
+                    생성
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPDID certificate List disposal confirmation  Modal end -->
+
+      <!-- KPDID Certificate List  ENd-->
+    </div>
+    <!--End wrapper-->
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+
+    <!-- simplebar js -->
+    <script src="../assets/plugins/simplebar/js/simplebar.js"></script>
+    <!-- sidebar-menu js -->
+    <script src="../assets/js/sidebar-menu.js"></script>
+    <!-- loader scripts -->
+    <!-- <script src="../assets/js/jquery.loading-indicator.js"></script> -->
+    <script src="../assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <!--Data Tables js-->
+    <script src="../assets/plugins/bootstrap-datatable/js/jquery.dataTables.min.js"></script>
+    <script src="../assets/plugins/bootstrap-datatable/js/dataTables.bootstrap4.min.js"></script>
+    <script src="../assets/plugins/bootstrap-datatable/js/dataTables.buttons.min.js"></script>
+    <script src="../assets/plugins/bootstrap-datatable/js/buttons.bootstrap4.min.js"></script>
+    <script src="../assets/plugins/bootstrap-datatable/js/buttons.html5.min.js"></script>
+    <script src="../assets/plugins/bootstrap-datatable/js/jszip.min.js"></script>
+    <!-- Custom scripts -->
+    <script src="../assets/js/app-script.js"></script>
+    <script src="../assets/js/individual-user.js"></script>
+  </body>
+</html>

@@ -1,0 +1,204 @@
+/* Login Form  design css is starting from Here  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #e5e5e5;
+}
+
+.container {
+  position: absolute;
+  max-width: 800px;
+  /* height: 537px; */
+  height: auto;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.leftcontainer {
+  position: relative;
+  background: #dd695d;
+  border-radius: 8px 0px 0px 8px;
+  height: 100%;
+  padding: 20px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightcontainer {
+  position: relative;
+  background-color: white;
+  border-radius: 0px 8px 8px 0px;
+  padding: 20px;
+  height: 100%;
+}
+
+.rightcontainer header {
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 38px;
+  text-align: center;
+  color: #383838;
+  margin-bottom: 50px;
+}
+
+.loginform {
+  position: relative;
+  margin-top: 20px;
+}
+.rightcontainer .mylabel {
+  text-transform: capitalize;
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+
+  color: #383838;
+}
+
+.rightcontainer .myinput {
+  width: 304px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #d2d2d2;
+  margin-right: 40px;
+}
+
+.formcheck {
+  margin-top: 50px;
+}
+
+.checkbox {
+  transform: scale(2);
+  background-color: #dd695d;
+}
+.loginbutton {
+  text-align: center;
+  margin-top: 50px;
+  padding-bottom: 30px;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #dd695d;
+  border-color: #bababa;
+  width: 35%;
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #dd695d;
+}
+
+.row {
+  height: 100%;
+}
+
+.mycard {
+  position: relative;
+  background-color: white;
+  height: 100%;
+  border-radius: 8px;
+}
+.box {
+  position: relative;
+  margin: 20px;
+  /* margin-bottom: 100px; */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.box img {
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftcontainer .box header {
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.message {
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 19px;
+  color: #dd695d;
+}
+
+/* Navbar design css is starting from Here  */
+.logo {
+  margin-left: 20px;
+}
+.menu {
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+}
+.menu a {
+  color: #383838;
+}
+.navlogin {
+  margin-right: 50px;
+}
+
+.nav-item .nav-link:hover {
+  text-decoration: underline;
+}
+
+.menu-right-1 {
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  padding-right: 10px;
+}
+.menu-right-1 a {
+  color: #909090;
+}
+
+.menu-right-2 {
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  padding-left: 5px;
+}
+.menu-right-2 a {
+  color: #383838;
+}

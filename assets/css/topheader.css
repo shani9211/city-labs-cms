@@ -1,0 +1,82 @@
+/* custom Navbar design css is starting from Here  */
+.logo {
+  margin-left: 10px;
+}
+.breadcrumbnav {
+  list-style: none;
+}
+.breadcrumbnav a {
+  text-decoration: none;
+  font-weight: normal;
+  color: #383838;
+}
+.breadcrumbnav a:hover {
+  text-decoration: underline;
+  font-weight: normal;
+}
+.breadcrumbnav li {
+  display: inline-block;
+}
+.breadcrumbnav li ::after {
+  content: " > ";
+  font-size: 16px;
+  color: #383838;
+  text-decoration: none;
+  font-weight: normal;
+}
+.breadcrumbnav li:last-child::after {
+  content: "";
+}
+.breadcrumbnav-item {
+  margin-top: 2px;
+  padding-left: 10px;
+}
+.menu {
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 33px;
+  color: #383838;
+}
+.menu a {
+  color: #383838;
+}
+.navlogin {
+  margin-right: 50px;
+}
+
+.nav-item .nav-link:hover {
+  text-decoration: underline;
+}
+
+.menu-right-1 {
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  margin-right: 20px;
+  margin-top: 8px;
+}
+.menu-right-1 a {
+  color: #909090;
+}
+
+.vertical-border {
+  margin-top: 15px;
+}
+.menu-right-2 {
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 4px;
+  margin-right: -40px;
+  padding-left: 20px;
+  text-align: right;
+}
+.menu-right-2 a {
+  color: #383838;
+}

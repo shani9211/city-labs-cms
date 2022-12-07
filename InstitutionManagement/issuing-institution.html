@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>통합고객관리포털 -CMS</title>
+    <!--favicon-->
+    <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon" />
+    <!-- Vector CSS -->
+    <link
+      href="../assets/plugins/vectormap/jquery-jvectormap-2.0.2.css"
+      rel="stylesheet"
+    />
+    <!-- simplebar CSS-->
+    <link
+      href="../assets/plugins/simplebar/css/simplebar.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap core CSS-->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- animate CSS-->
+    <link href="../assets/css/animate.css" rel="stylesheet" type="text/css" />
+    <!-- Icons CSS-->
+    <link href="../assets/css/icons.css" rel="stylesheet" type="text/css" />
+    <!-- Sidebar CSS-->
+    <link href="../assets/css/sidebar-menu.css" rel="stylesheet" />
+    view_details_kp_did
+    <!-- Custom Style-->
+    <link href="../assets/css/app-style.css" rel="stylesheet" />
+    <!-- skins CSS-->
+    <link href="../assets/css/skins.css" rel="stylesheet" />
+    <!--Data Tables -->
+    <link
+      href="../assets/plugins/bootstrap-datatable/css/dataTables.bootstrap4.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="../assets/plugins/bootstrap-datatable/css/buttons.bootstrap4.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css"
+    />
+    <!-- custom CSS -->
+
+    <link href="../assets/css/topheader.css" rel="stylesheet" />
+    <link href="../assets/css/issuing-institution.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Start wrapper-->
+    <div id="wrapper">
+      <!--Start topbar header-->
+      <header class="topbar-nav">
+        <nav id="header-setting" class="navbar navbar-expand fixed-top">
+          <div class="logo">
+            <a class="navbar-brand" href="#">
+              <img src="../assets/images/logo.svg" alt="logo" />
+            </a>
+          </div>
+          <ul class="navbar-nav ml-3 mr-auto align-items-center">
+            <li class="nav-item">
+              <img src="../assets/images/home-icon.svg" alt="" class="ml-2" />
+            </li>
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="../dashboard.html">메인</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="javaScript:void();">기관 관리</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="issuing-institution.html">급기관</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                발급목록
+              </li>
+            </ol>
+          </ul>
+
+          <ul class="navbar-nav navlogin">
+            <li class="nav-item menu-right-1">
+              <a class="nav-link" href="#">2021-07-21 수요일 </a>
+            </li>
+            <li class="nav-item vertical-border">|</li>
+            <!-- <li class="nav-item menu-right-2">
+            <a class="nav-link" href="#">로그인</a>
+          </li> -->
+            <li class="nav-item menu-right-2">
+              <a
+                class="nav-link dropdown-toggle dropdown-toggle-nocaret"
+                data-toggle="dropdown"
+                href="#"
+                >홍길동(관리자)
+                <!-- <span class="user-profile"
+                ><img
+                  src="assets/images/login-user-img.png"
+                  class="img-circle"
+                  alt="user avatar"
+              /></span> -->
+              </a>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li class="dropdown-item user-details">
+                  <a href="javaScript:void();">
+                    <div class="media">
+                      <div class="avatar">
+                        <img
+                          class="align-self-start mr-3"
+                          src="../assets/images/login-user-img.png"
+                          alt="user avatar"
+                        />
+                      </div>
+                      <div class="media-body">
+                        <h6 class="mt-2 user-title">스콧 리</h6>
+                        <p class="user-subtitle">mccoy@example.com</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="dropdown-divider"></li>
+                <!-- <li class="dropdown-item">
+                <i class="icon-envelope mr-2"></i> Profile
+              </li> -->
+                <li class="dropdown-divider"></li>
+                <li class="dropdown-item">
+                  <i class="icon-wallet mr-2"></i> 프로필
+                </li>
+                <li class="dropdown-divider"></li>
+                <li class="dropdown-item">
+                  <i class="icon-settings mr-2"></i> 환경
+                </li>
+                <li class="dropdown-divider"></li>
+                <li class="dropdown-item">
+                  <i class="icon-power mr-2"></i> 로그 아웃
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!--End topbar header-->
+
+      <!--Start sidebar-wrapper-->
+      <div
+        id="sidebar-wrapper"
+        data-simplebar=""
+        data-simplebar-auto-hide="true"
+      >
+        <ul class="sidebar-menu">
+          <li>
+            <a href="/dashboard.html" class="waves-effect">
+              <img
+                src="../assets/images/dashboard-icon.svg"
+                alt=""
+                class="custom-icon"
+              />
+              <span>대시보드</span>
+              <i class="fa fa-angle-right pull-right menu-icon mt-1"></i>
+            </a>
+          </li>
+          <li>
+            <a href="javaScript:void();" class="waves-effect">
+              <img
+                src="../assets/images/kp_did.svg"
+                alt=""
+                class="custom-icon"
+              />
+              <span>KP-DID 관리</span>
+              <i class="fa fa-angle-right pull-right menu-icon"></i>
+            </a>
+            <ul class="sidebar-submenu">
+              <li>
+                <a href="../KPDID/individual-user.html">개인회원</a>
+              </li>
+              <li>
+                <a href="../KPDID/corporate-user.html">법인회원</a>
+              </li>
+              <li>
+                <a href="../KPDID/corporate-approval.html">법인승인</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javaScript:void();" class="waves-effect">
+              <img
+                src="../assets/images/insmange.svg"
+                alt=""
+                class="custom-icon"
+              />
+              <span>기관관리</span>
+              <i class="fa fa-angle-right pull-right menu-icon"></i>
+            </a>
+            <ul class="sidebar-submenu">
+              <li>
+                <a href="../InstitutionManagement/issuing-institution.html"
+                  >기관 관리</a
+                >
+              </li>
+              <li>
+                <a href="../InstitutionManagement/verifying-institution.html"
+                  >검증기관</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="javaScript:void();" class="waves-effect">
+              <img
+                src="../assets/images/certificate_mange.svg"
+                alt=""
+                class="custom-icon"
+              />
+              <span>인증서관리</span>
+              <i class="fa fa-angle-right pull-right menu-icon"></i>
+            </a>
+            <ul class="sidebar-submenu">
+              <li>
+                <a
+                  href="../CertificateManagement/certificate-individual-user.html"
+                  >개인회원</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../CertificateManagement/certificate-corporate-user.html"
+                  >법인회원</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javaScript:void();" class="waves-effect">
+              <img
+                src="../assets/images/blockchain.svg"
+                alt=""
+                class="custom-icon"
+              />
+              <span>블록체인</span>
+              <i class="fa fa-angle-right pull-right menu-icon"></i>
+            </a>
+            <ul class="sidebar-submenu">
+              <li>
+                <a href="../Blockchain/blockchain.html" onclick="myFunction()"
+                  >블록체인</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javaScript:void();" class="waves-effect">
+              <img
+                src="../assets/images/mydata.svg"
+                alt=""
+                class="custom-icon"
+              />
+              <span>마이데이터</span>
+              <i class="fa fa-angle-right pull-right menu-icon"></i>
+            </a>
+            <ul class="sidebar-submenu">
+              <li>
+                <a href="../mydata/mydata.html">마이데이터</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javaScript:void();" class="waves-effect">
+              <img
+                src="../assets/images/report.svg"
+                alt=""
+                class="custom-icon"
+              />
+              <span>리포트</span>
+              <i class="fa fa-angle-right pull-right menu-icon"></i>
+            </a>
+            <ul class="sidebar-submenu">
+              <li>
+                <a href="../Report/individual-user.html">개인회원</a>
+              </li>
+              <li>
+                <a href="../Report/corporate-user.html">법인회원</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javaScript:void();" class="waves-effect">
+              <img
+                src="../assets/images/opsmange.svg"
+                alt=""
+                class="custom-icon"
+              />
+              <span>운영관리</span>
+              <i class="fa fa-angle-right pull-right menu-icon"></i>
+            </a>
+            <ul class="sidebar-submenu">
+              <li>
+                <a href="../OperationManagement/operations-management.html"
+                  >운영관리</a
+                >
+              </li>
+              <li>
+                <a href="../OperationManagement/faq.html">FAQ</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javaScript:void();" class="waves-effect">
+              <img
+                src="../assets/images/settings.svg"
+                alt=""
+                class="custom-icon"
+              />
+              <span>설정</span>
+              <i class="fa fa-angle-right pull-right menu-icon"></i>
+            </a>
+            <ul class="sidebar-submenu">
+              <li>
+                <a href="../Settings/institutions-list.html">기관목록</a>
+              </li>
+              <li>
+                <a href="../Settings/users-list.html">사용자목록</a>
+              </li>
+
+              <li>
+                <a href="../Settings/authorization-settings.html">권한설정</a>
+              </li>
+              <li>
+                <a href="../Settings/access-history.html">접속이력</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!--End sidebar-wrapper-->
+      <div class="clearfix"></div>
+
+      <!-----------------------------------Start  Dashboard section content-wrapper---------------------->
+      <div class="content-wrapper">
+        <div class="container-fluid">
+          <!-- Individual page  Content-->
+          <!--First  Row-->
+          <div class="row">
+            <div class="col-lg-12 main-card-section">
+              <div class="card-section">
+                <div class="card-body card-body-section">
+                  <ul class="nav nav-tabs nav-tabs-primary">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active"
+                        data-toggle="tab"
+                        href="#tabe-1"
+                      >
+                        <span class="hidden-xs" style="font-size: 20px"
+                          >발급목록</span
+                        ></a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-toggle="tab" href="#tabe-2">
+                        <span class="hidden-xs" style="font-size: 20px"
+                          >폐기목록</span
+                        ></a
+                      >
+                    </li>
+                  </ul>
+
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <div id="tabe-1" class="tab-pane active">
+                      <div class="row">
+                        <div class="col-lg-12 mt-4 pb-4">
+                          <div class="card">
+                            <div class="card-body">
+                              <!-- date -->
+                              <div id="date-container" class="row">
+                                <div class="input-group date col-sm-2">
+                                  <input
+                                    type="text"
+                                    placeholder="시작일"
+                                    class="form-control"
+                                    id="from-dated"
+                                  /><span class="input-group-addon"
+                                    ><span class="icon material-icons-outlined"
+                                      >date_range</span
+                                    ></span
+                                  >
+                                </div>
+                                <div class="input-group date col-sm-2">
+                                  <input
+                                    type="text"
+                                    placeholder="종료일"
+                                    class="form-control"
+                                    id="from-dated"
+                                  /><span class="input-group-addon"
+                                    ><span class="icon material-icons-outlined"
+                                      >date_range</span
+                                    ></span
+                                  >
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-2">
+                                  <select class="select1">
+                                    <option selected disabled>
+                                      발급기관 선택
+                                    </option>
+                                  </select>
+                                </div>
+                              </div>
+
+                              <div class="row mt-5">
+                                <!-- <input type="text" class="input-group.search " id="myInputTextField" placeholder="search here"> -->
+                                <form class="search-bar">
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="DID, PI, 이름, 휴대폰번호"
+                                    id="myInputTextField"
+                                  />
+                                  <a href="javascript:void();"
+                                    ><i
+                                      class="icon-magnifier"
+                                      style="
+                                        font-weight: bold;
+                                        font-size: large;
+                                      "
+                                    ></i
+                                  ></a>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- data table Start -->
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <!-- <h5>발급목록 <span class="ml-3 table-subtitle " >5건 / 총9건</span></h5> -->
+                          <h5 style="font-size: 20px">
+                            발급목록
+                            <span
+                              class="ml-3 table-subtitle"
+                              id="filterbox"
+                            ></span>
+                          </h5>
+                          <div
+                            class="div"
+                            style="padding: 0; margin: 0; margin-top: -45px"
+                          >
+                            <table
+                              id="issuing-institution-user"
+                              class="table table-bordered"
+                              style="width: 100%"
+                            ></table>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Row-->
+                    </div>
+
+                    <!-- tabe2 start -->
+
+                    <div id="tabe-2" class="tab-pane fade">
+                      <div class="row">
+                        <div class="col-lg-12 mt-4 pb-4">
+                          <div class="card">
+                            <div class="card-body">
+                              <!-- date -->
+                              <div id="date-container" class="row">
+                                <div class="input-group date col-sm-2">
+                                  <input
+                                    type="text"
+                                    placeholder="시작일"
+                                    class="form-control"
+                                    id="from-dated"
+                                  /><span class="input-group-addon"
+                                    ><span class="icon material-icons-outlined"
+                                      >date_range</span
+                                    ></span
+                                  >
+                                </div>
+                                <div class="input-group date col-sm-2">
+                                  <input
+                                    type="text"
+                                    placeholder="종료일"
+                                    class="form-control"
+                                    id="from-dated"
+                                  /><span class="input-group-addon"
+                                    ><span class="icon material-icons-outlined"
+                                      >date_range</span
+                                    ></span
+                                  >
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-2">
+                                  <select class="select1">
+                                    <option selected disabled>노출상태</option>
+                                  </select>
+                                </div>
+                              </div>
+
+                              <div class="row mt-5">
+                                <form class="search-bar">
+                                  <input
+                                    type="search"
+                                    class="form-control"
+                                    placeholder="DID, PI, 이름, 휴대폰번호"
+                                    id="tab_2_myInputTextField"
+                                  />
+                                  <a href="javascript:void();"
+                                    ><i
+                                      class="icon-magnifier"
+                                      style="
+                                        font-weight: bold;
+                                        font-size: large;
+                                      "
+                                    ></i
+                                  ></a>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- data table Start -->
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <h5 style="font-size: 20px">
+                            발급목록
+                            <span
+                              class="ml-3 table-subtitle"
+                              id="tab_2_filterbox"
+                            ></span>
+                          </h5>
+                          <div
+                            class="div"
+                            style="padding: 0; margin: 0; margin-top: -45px"
+                          >
+                            <table
+                              id="issueing_user_disposal_list"
+                              class="table table-bordered"
+                              style="width: 100%"
+                            ></table>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Row-->
+                    </div>
+                    <!-- tab pane 2 data end -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End First  Row-->
+
+            <!-- popup form for deatails of issuer details start -->
+            <div class="modal" id="view_details_kp_did">
+              <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                  <a href="#" class="mt-3 ml-2 pl-3">발급기관 상세 </a>
+
+                  <!-- Modal body -->
+                  <div class="modal-body view_details_body"></div>
+
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <div class="row modal-footer-row">
+                      <div class="col-lg-12 text-center">
+                        <button
+                          type="button"
+                          class="btn btn-primary disposal-success text-center"
+                          data-dismiss="modal"
+                        >
+                          취소
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- popup form for issuer deatails of issuing institution end -->
+
+            <!-- issuer details  disposal  Modal start -->
+            <!-- The Modal -->
+            <div class="modal" id="issuer_disposal">
+              <div
+                class="modal-dialog modal-dialog-centered custom-modal-width"
+              >
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title">인증서를 폐기하시겠습니까?</h4>
+                  </div>
+                  <div class="modal-body view_details_body">
+                    <h6 class="mb-1">폐기사유</h6>
+                    <form id="disposal_form">
+                      <div class="form-group">
+                        <label for="comment"></label>
+                        <textarea
+                          class="form-control disposal-textarea"
+                          rows="5"
+                          id="comment"
+                          onmouseover="displaymessage()"
+                          placeholder="폐기사유를 입력해 주세요."
+                          required
+                        ></textarea>
+                      </div>
+                      <div class="mt-3">
+                        <h5>주의사항</h5>
+                      </div>
+                      <div class="confirmation_message" id="message">
+                        - 폐기된 인증서는 복구할 수 없으며 더 이상 사용이
+                        불가합니다.
+                      </div>
+                      <div class="icheck-material-primary">
+                        <input type="checkbox" id="user-checkbox" checked="" />
+                        <label for="user-checkbox"
+                          >폐기주의사항을 확인했습니다.</label
+                        >
+                      </div>
+                      <div
+                        class="validation_message"
+                        id="validation_message"
+                      ></div>
+                    </form>
+                  </div>
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <div class="row modal-footer-row">
+                      <div class="col-lg-6 text-right">
+                        <button
+                          type="button"
+                          class="btn btn-light disposal-cancel"
+                          data-dismiss="modal"
+                        >
+                          취소
+                        </button>
+                      </div>
+                      <div class="col-lg-6 text-left">
+                        <!-- <button type="button" id="disposal" class="btn btn-primary disposal-success"  onclick="disposalSubmit()">폐기 </button> -->
+                        <!-- <button type="button" class="btn btn-danger" id="shani" onclick="myfunction()" data-dismiss="modal">Close</button> -->
+                        <button
+                          type="button"
+                          class="btn btn-primary disposal-success"
+                          onclick="$('#cnf-popup-3').modal('show')"
+                          id="blur-button"
+                        >
+                          폐기
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  disposal confirmation  Modal start -->
+            <div
+              class="modal fade"
+              id="cnf-popup-3"
+              data-backdrop="static"
+              data-keyboard="false"
+              tabindex="-1"
+              role="dialog"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content modal-confirmation-1">
+                  <div class="modal-body disposal-confirmation-text">
+                    <h6>수정내용을 저장 하시겠습니까?</h6>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="row modal-footer-row">
+                      <div class="col-lg-6 text-right">
+                        <button
+                          type="button"
+                          class="btn btn-light disposal-cancel"
+                          id="remove-blur"
+                          data-dismiss="modal"
+                          onclick="$('#myModal').modal('hide')"
+                        >
+                          취소
+                        </button>
+                      </div>
+                      <div class="col-lg-6 text-left">
+                        <button
+                          type="button"
+                          class="btn btn-primary disposal-success"
+                          onclick="$('#cnf-popup-4').modal('show')"
+                          id="blur-button2"
+                        >
+                          생성
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- issuing Confirmation Modal 2 -->
+            <div
+              class="modal fade"
+              id="cnf-popup-4"
+              data-backdrop="static"
+              data-keyboard="false"
+              tabindex="-1"
+              role="dialog"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content confirmation-modal-1">
+                  <div class="modal-body">
+                    <h6>정보가 수정 되었습니다.</h6>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="row modal-footer-row">
+                      <div class="col-lg-12 text-center">
+                        <button
+                          type="button"
+                          class="btn btn-primary disposal-success"
+                          onclick="$('#cnf-popup-4').modal('hide')"
+                          id="remove-blur2"
+                        >
+                          확인
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- issuer details  disposal  Modal end -->
+
+            <!-- footer section start -->
+            <div class="container"><div class="row"></div></div>
+          </div>
+
+          <!--start overlay-->
+          <div class="overlay toggle-menu"></div>
+          <!--end overlay-->
+        </div>
+        <!-- End container-fluid-->
+      </div>
+      <!-----------------------------------End  Dashboard section content-wrapper---------------------->
+    </div>
+    <!--End wrapper-->
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+
+    <!-- simplebar js -->
+    <script src="../assets/plugins/simplebar/js/simplebar.js"></script>
+    <!-- sidebar-menu js -->
+    <script src="../assets/js/sidebar-menu.js"></script>
+    <!-- loader scripts -->
+    <!-- <script src="../assets/js/jquery.loading-indicator.js"></script> -->
+
+    <script src="../assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script src="../assets/plugins/jquery-knob/jquery.knob.js"></script>
+
+    <!--Data Tables js-->
+    <script src="../assets/plugins/bootstrap-datatable/js/jquery.dataTables.min.js"></script>
+    <script src="../assets/plugins/bootstrap-datatable/js/dataTables.bootstrap4.min.js"></script>
+    <script src="../assets/plugins/bootstrap-datatable/js/dataTables.buttons.min.js"></script>
+    <script src="../assets/plugins/bootstrap-datatable/js/buttons.bootstrap4.min.js"></script>
+    <script src="../assets/plugins/bootstrap-datatable/js/buttons.html5.min.js"></script>
+    <script src="../assets/plugins/bootstrap-datatable/js/jszip.min.js"></script>
+    <!-- Custom scripts -->
+    <script src="../assets/js/app-script.js"></script>
+    <script src="../assets/js/issuing-institution.js"></script>
+  </body>
+</html>

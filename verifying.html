@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>통합고객관리포털 -CMS</title>
+    <!--favicon-->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+    <!-- Vector CSS -->
+    <link
+      href="assets/plugins/vectormap/jquery-jvectormap-2.0.2.css"
+      rel="stylesheet"
+    />
+    <!-- simplebar CSS-->
+    <link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
+    <!-- Bootstrap core CSS-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- animate CSS-->
+    <link href="assets/css/animate.css" rel="stylesheet" type="text/css" />
+    <!-- Icons CSS-->
+    <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+    <!-- Sidebar CSS-->
+    <link href="assets/css/sidebar-menu.css" rel="stylesheet" />
+    <!-- Custom Style-->
+    <link href="assets/css/app-style.css" rel="stylesheet" />
+    <!-- skins CSS-->
+    <link href="assets/css/skins.css" rel="stylesheet" />
+    <!-- Datepicker -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap-datepicker-1.9.0-dist/css/bootstrap-datepicker.min.css"/>
+
+    <link rel="stylesheet" href="assets/plugins/bootstrap-datatable/css/dataTables.bootstrap4.min.css"/>    
+    <!-- After Market CSS -->    
+    <link href="assets/css/topheader.css" rel="stylesheet" />
+    <link href="assets/css/settings-il.css" rel="stylesheet" />
+
+  </head>
+
+  <body>
+    <!-- start loader -->
+    <div id="pageloader-overlay" class="visible incoming">
+      <div class="loader-wrapper-outer">
+        <div class="loader-wrapper-inner"><div class="loader"></div></div>
+      </div>
+    </div>
+    <!-- end loader -->
+
+    <!-- Start wrapper-->
+    <div id="wrapper">
+      <!-- start topbar design  -->
+
+      <nav class="navbar navbar-expand-md bg-white sticky-top">
+        <div class="logo">
+          <a class="navbar-brand" href="#">
+            <img src="assets/images/logo.svg" alt="logo" />
+          </a>
+        </div>
+
+        <ol class="navbar-nav mr-auto breadcrumbnav">
+          <span
+            ><i class="zmdi zmdi-home" style="font-size: 20px"></i>
+            <li><a href="#">메인</a></li></span
+          >
+          <li class="breadcrumbnav-item">대시보드</li>
+        </ol>
+
+        <ul class="navbar-nav navlogin">
+          <li class="nav-item menu-right-1">
+            <a class="nav-link" href="#">2021-07-21 수요일 </a>
+          </li>
+          <li class="nav-item vertical-border" >|</li>
+          <!-- <li class="nav-item menu-right-2">
+            <a class="nav-link" href="#">로그인</a>
+          </li> -->
+          <li class="nav-item menu-right-2">
+            <a
+              class="nav-link dropdown-toggle dropdown-toggle-nocaret"
+              data-toggle="dropdown"
+              href="#"
+            >홍길동(관리자)
+              <!-- <span class="user-profile"
+                ><img
+                  src="assets/images/login-user-img.png"
+                  class="img-circle"
+                  alt="user avatar"
+              /></span> -->
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li class="dropdown-item user-details">
+                <a href="javaScript:void();">
+                  <div class="media">
+                    <div class="avatar">
+                      <img
+                        class="align-self-start mr-3"
+                        src="assets/images/login-user-img.png"
+                        alt="user avatar"
+                      />
+                    </div>
+                    <div class="media-body">
+                      <h6 class="mt-2 user-title">Sarajhon Mccoy</h6>
+                      <p class="user-subtitle">mccoy@example.com</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="dropdown-divider"></li>
+              <!-- <li class="dropdown-item">
+                <i class="icon-envelope mr-2"></i> Profile
+              </li> -->
+              <li class="dropdown-divider"></li>
+              <li class="dropdown-item">
+                <i class="icon-wallet mr-2"></i> Profile
+              </li>
+              <li class="dropdown-divider"></li>
+              <li class="dropdown-item">
+                <i class="icon-settings mr-2"></i> Setting
+              </li>
+              <li class="dropdown-divider"></li>
+              <li class="dropdown-item">
+                <i class="icon-power mr-2"></i> Logout
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <!--end  topbar design   -->
+
+      <div class="container-fluid main-section-wrapper">
+        <div class="row">
+          <div class="col-md-2 sidebar-column">
+            <ul class="sidebar-menu">
+              <!-- <li class="sidebar-header">MAIN NAVIGATION</li> -->
+              <li>
+                <a href="/dashboard.html" class="waves-effect">
+                  <i class="zmdi zmdi-view-dashboard"></i>
+                  <span>Dashboard</span>
+                </a>
+               
+              </li>
+              <li>
+                <a href="javaScript:void();" class="waves-effect">
+                  <i class="zmdi zmdi-layers"></i>
+                  <span>KP-DID 관리</span>
+                  <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="sidebar-submenu">
+                  <li>
+                    <a href="Individual-user.html"
+                      ><i
+                        class="zmdi zmdi-chevron-right"
+                        style="font-size: 16px"
+                      ></i
+                      >개인회원</a
+                    >
+                  </li>
+                  <li>
+                    <a href="corporate-user.html"
+                      ><i
+                        class="zmdi zmdi-chevron-right"
+                        style="font-size: 16px"
+                      ></i
+                      >법인회원</a
+                    >
+                  </li>
+
+                  <li>
+                    <a href="corporate-approval.html"
+                      ><i
+                        class="zmdi zmdi-chevron-right"
+                        style="font-size: 16px"
+                      ></i
+                      >법인승인</a
+                    >
+                  </li>
+                  <!-- <li>
+                    <a href="ui-nav-tabs.html"
+                      ><i class="zmdi zmdi-dot-circle-alt"></i> Nav Tabs</a
+                    >
+                  </li> -->
+                </ul>
+              </li>
+              <li>
+                <a href="javaScript:void();" class="waves-effect">
+                  <i class="zmdi zmdi-card-travel"></i>
+                  <span>기관관리</span>
+                  <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="sidebar-submenu">
+                  <li>
+                    <a href="issuing-institution.html"
+                      ><i
+                        class="zmdi zmdi-chevron-right"
+                        style="font-size: 16px"
+                      ></i
+                      >기관 관리</a
+                    >
+                  </li>
+                  <li>
+                    <a href="verifying-institution.html"
+                      ><i
+                        class="zmdi zmdi-chevron-right"
+                        style="font-size: 16px"
+                      ></i
+                      >검증기관</a
+                    >
+                  </li>
+
+                 
+                </ul>
+              </li>
+              <li>
+                <a href="javaScript:void();" class="waves-effect">
+                  <i class="zmdi zmdi-shield-security"></i>
+                  <span>인증서관리</span>
+                  <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="sidebar-submenu">
+                  <li>
+                    <a href="Individual-user.html"
+                      ><i
+                        class="zmdi zmdi-chevron-right"
+                        style="font-size: 16px"
+                      ></i
+                      >기관 관리</a
+                    >
+                  </li>
+                  <li>
+                    <a href="corporate-user.html"
+                      ><i
+                        class="zmdi zmdi-chevron-right"
+                        style="font-size: 16px"
+                      ></i
+                      >검증기관</a
+                    >
+                  </li>
+
+                  <!-- <li>
+                    <a href="corporate-approval.html"
+                      ><i
+                        class="zmdi zmdi-chevron-right"
+                        style="font-size: 16px"
+                      ></i>법인승인</a>
+                  </li> -->
+                </ul>
+              </li>
+              <li>
+                <a href="javaScript:void();" class="waves-effect">
+                  <i class="zmdi zmdi-view-dashboard"></i>
+                  <span>블록체인</span>
+                  <!-- <i class="fa fa-angle-left pull-right"></i> -->
+                </a>
+              </li>
+              <li>
+                <a href="javaScript:void();" class="waves-effect">
+                  <i class="zmdi zmdi-account-circle"></i>
+                  <span>마이데이터</span>
+                  <!-- <i class="fa fa-angle-left pull-right"></i> -->
+                </a>
+              </li>
+              <li>
+                <a href="javaScript:void();" class="waves-effect">
+                  <i class="zmdi zmdi-chart"></i>
+                  <span>리포트</span>
+                  <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="sidebar-submenu">
+                  <li>
+                    <a href="individual-member.html"
+                      ><i
+                        class="zmdi zmdi-chevron-right"
+                        style="font-size: 16px"
+                      ></i
+                      >기관 관리</a
+                    >
+                  </li>
+                  <li>
+                    <a href="corporate-member.html"
+                      ><i
+                        class="zmdi zmdi-chevron-right"
+                        style="font-size: 16px"
+                      ></i
+                      >검증기관</a
+                    >
+                  </li>
+
+               
+                </ul>
+              </li>
+              <li>
+                <a href="javaScript:void();" class="waves-effect">
+                  <i class="zmdi zmdi-assignment"></i>
+                  <span>운영관리</span>
+                  <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="sidebar-submenu">
+                  <li>
+                    <a href="operations-management.html"
+                      ><i
+                        class="zmdi zmdi-chevron-right"
+                        style="font-size: 16px"
+                      ></i
+                      >운영관리</a
+                    >
+                  </li>
+                  <li>
+                    <a href="faq.html"
+                      ><i
+                        class="zmdi zmdi-chevron-right"
+                        style="font-size: 16px"
+                      ></i
+                      >FAQ</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="javaScript:void();" class="waves-effect">
+                  <i class="zmdi zmdi-settings"></i>
+                  <span>설정</span>
+                  <i class="fa fa-angle-left pull-right"></i>
+                  <ul class="sidebar-submenu">
+                    <li>
+                      <a href="institutions-list.html"
+                        ><i
+                          class="zmdi zmdi-chevron-right"
+                          style="font-size: 16px"
+                        ></i
+                        >기관목록</a
+                      >
+                    </li>
+                    <li>
+                      <a href="users-list.html"
+                        ><i
+                          class="zmdi zmdi-chevron-right"
+                          style="font-size: 16px"
+                        ></i
+                        >사용자목록</a
+                      >
+                    </li>
+
+                    <li>
+                      <a href="authorization-settings.html"
+                        ><i
+                          class="zmdi zmdi-chevron-right"
+                          style="font-size: 16px"
+                        ></i
+                        >>권한설정</a
+                      >
+                    </li>
+                    <li>
+                      <a href="access-history.html"
+                        ><i
+                          class="zmdi zmdi-chevron-right"
+                          style="font-size: 16px"
+                        ></i
+                        >>접속이력</a
+                      >
+                    </li>
+                  </ul>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Individual page  Content-->
+          <div class="col-md-10 .main-section">
+            <div class="container-fluid container">                
+                <!-- Inputs --> 
+                <div class="row" style="margin-top: 8px;">
+                  <div class="col-lg-2 col-md-2 col-sm-2">
+                    <div class="row" style="margin: 0;">
+                      <div class="input-group date col-sm-12">
+                        <input type="text" placeholder="시작일" class="form-control" id="start-date"><span class="input-group-addon"><span class="icon material-icons-outlined">date_range</span></span>                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 col-md-2 col-sm-2">
+                    <div class="row" style="margin: 0;">
+                      <div class="input-group date col-sm-12">
+                        <input type="text" placeholder="종료일" class="form-control" id="start-date"><span class="input-group-addon"><span class="icon material-icons-outlined">date_range</span></span>                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-2 col-sm-12">
+                    <select class="select1">
+                      <option selected disabled>기관구분</option>
+                    </select>
+                  </div>
+                </div>   
+                <!-- Search Area -->
+                <div class="row" style="margin: 16px 0px;">
+                  <div class="input-group search col-sm-10 col-md-10 col-sm-10" style=" margin: 0;">
+                    <span class="input-group-addon"><span class="icon material-icons-outlined">search</span></span>
+                    <input type="text" placeholder="  기관명으로 검색" class="form-control" id="search">                        
+                  </div>
+                  <div class="col-lg-1 col-md-1 col-sm-1" style="padding-right: 0;">
+                    <button type="button" class="btn btn-primary" style="width: 100%;">검색</button>
+                  </div>
+                  <div class="col-lg-1 col-md-1 col-sm-1" style="padding-right: 0;">
+                    <button type="button" class="btn btn-primary" style="width: 100%;">초기확</button>
+                  </div>
+                </div>
+                <!-- Table Heading -->
+                <div style="margin-top: 16px;" class="row">
+                  <div class="left-aligned col-lg-6 col-md-6 col-sm-6">
+                    <h5 style="margin-top: 8px;">기관목록(총 5건)</h5>
+                  </div>
+                  <div class="right-aligned col-lg-6 col-md-6 col-sm-6">
+                    <button type="button" onclick="$('#add-institution-popup').modal('show')" class="btn btn-primary" style="transform: translateY(0px);">기관 추가</button>
+                  </div>
+                </div>
+                <!-- Table -->
+                <div>
+                    <table id="table" class="table" style="background: white;"></table>
+                </div>             
+            </div>
+             
+          </div>
+            <!-- End container-fluid-->
+        </div> 
+         <!--End Dashboard Content-->
+
+      </div>
+    </div>
+      
+    <!--End wrapper-->
+   
+    <!-- Organization Modification Modal -->
+    <div class="modal fade" id="org-mod-popup" data-backdrop="static" data-keyboard="false" tabindex="-1"  role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-md" style="margin-left: 10%;">
+        <div class="modal-content">                                                
+          <div class="modal-body">                    
+            
+          </div>
+          <div class="modal-footer center">
+            <button type="button" class="btn btn-dark" onclick="$('#org-mod-popup').modal('hide')">취소</button>
+            <button type="button" class="btn btn-primary" onclick="$('#cnf-popup-3').modal('show')">생성</button>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+    <!-- Org Confirmation Modal 1 -->
+    <div class="modal fade" id="cnf-popup-3" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-sm" style="margin-right: 10%;">
+        <div class="modal-content">                                                
+          <div class="modal-body">  
+            <h6>수정내용을 저장 하시겠습니까?</h6>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-dark" onclick="$('#cnf-popup-3').modal('hide')">취소</button>
+            <button type="button" class="btn btn-primary" onclick="$('#cnf-popup-4').modal('show')">생성</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Org Confirmation Modal 2 -->
+    <div class="modal fade" id="cnf-popup-4" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-sm modal-dialog-centered" style="margin-right: 10%; margin-bottom: 10%;">
+        <div class="modal-content">                                                
+          <div class="modal-body">  
+            <h6>정보가 수정 되었습니다.</h6>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-dark" onclick="$('.modal').modal('hide')">확인</button>            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add Institution Modal -->
+    <div class="modal fade" id="add-institution-popup" data-backdrop="static" data-keyboard="false" tabindex="-1"  role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-md" style="margin-left: 10%;">
+        <div class="modal-content">                                                
+          <div class="modal-body">                    
+            <h4>기관 추가</h4>    
+            <div class="container">
+              <h6>기관 정보</h6>
+              <hr>
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="label">기관유형</td>
+                    <td class="value">
+                      <select class="select1">
+                        <option selected disabled>선택</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="label">기관명</td>
+                    <td class="value">
+                      <div class="row">
+                        <div class="input-group search col-sm-12 col-md-12 col-sm-12" style=" margin: 0;">                        
+                          <input type="text" placeholder="기관명 입력" class="form-control" id="search">                        
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="label">사업자번호</td>
+                    <td class="value">
+                      <div class="row">
+                        <div class="input-group search col-sm-12 col-md-12 col-sm-12" style=" margin: 0;">                        
+                          <input type="text" placeholder="사업자등록번호 입력" class="form-control" id="search">                        
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="label">대표이메일</td>
+                    <td class="value">
+                      <div class="row">
+                        <div class="input-group search col-sm-12 col-md-12 col-sm-12" style=" margin: 0;">                        
+                          <input type="text" placeholder="이메일 입력" class="form-control" id="search">                        
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>            
+            <div class="container">
+              <h6>담당자 정보</h6>
+              <hr>
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="label">담당자명</td>
+                    <td class="value">
+                      <div class="row">
+                        <div class="input-group search col-sm-12 col-md-12 col-sm-12" style=" margin: 0;">                        
+                          <input type="text" placeholder="담당자명 입력" class="form-control" id="search">                        
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="label">담당자 연락처</td>
+                    <td class="value">
+                      <div class="row">
+                        <div class="input-group search col-sm-12 col-md-12 col-sm-12" style=" margin: 0;">                        
+                          <input type="text" placeholder="담당자 연락처 입력" class="form-control" id="search">                        
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="label">담당자 이메일</td>
+                    <td class="value">
+                      <div class="row">
+                        <div class="input-group search col-sm-12 col-md-12 col-sm-12" style=" margin: 0;">                        
+                          <input type="text" placeholder="담당자 이메일 입력" class="form-control" id="search">                        
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="modal-footer center">
+            <button type="button" class="btn btn-dark" onclick="$('#add-institution-popup').modal('hide')">취소</button>
+            <button type="button" class="btn btn-primary" onclick="$('#cnf-popup-1').modal('show')">생성</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Add Institution Confirmation Modal 1 -->
+    <div class="modal fade" id="cnf-popup-1" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-sm" style="margin-right: 10%;">
+        <div class="modal-content">                                                
+          <div class="modal-body">  
+            <h6>해당 기관을 등록 하시겠습니까?</h6>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-dark" onclick="$('#cnf-popup-1').modal('hide')">취소</button>
+            <button type="button" class="btn btn-primary" onclick="$('#cnf-popup-2').modal('show')">생성</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Add Institution Confirmation Modal 2 -->
+    <div class="modal fade" id="cnf-popup-2" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-sm modal-dialog-centered" style="margin-right: 10%; margin-bottom: 10%;">
+        <div class="modal-content">                                                
+          <div class="modal-body">  
+            <h6>기관 등록 되었습니다.</h6>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-dark" onclick="$('.modal').modal('hide')">취소</button>            
+          </div>
+      </div>
+    </div>
+
+    
+    
+    
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- simplebar js -->
+    <script src="assets/plugins/simplebar/js/simplebar.js"></script>
+    <!-- sidebar-menu js -->
+    <script src="assets/js/sidebar-menu.js"></script>
+    
+    <!-- Custom scripts -->
+    <script src="assets/js/app-script.js"></script>
+    <!-- Easy Pie Chart JS -->
+    <script src="assets/plugins/Chart.js/Chart.min.js"></script>
+    <script src="assets/plugins/Chart.js/chartjs-script.js"></script>
+    <script src="assets/plugins/chartjs-extra/Chart.roundedBarCharts.min.js"></script>
+
+    <script src="assets/plugins/bootstrap-datepicker-1.9.0-dist/js/bootstrap-datepicker.min.js"></script>
+    <script src="assets/plugins/bootstrap-datatable/js/jquery.dataTables.min.js"></script>
+    
+    <script src="assets/plugins/jquery-knob/jquery.knob.js"></script>
+    <script>
+      $(function () {
+        $(".knob").knob();
+      });
+    </script>
+
+    <!--Page Specific-->
+    <!-- <script src="assets/js/settings-il.js"></script> -->
+    <script src="assets/js/testing.js"></script>
+  </body>
+</html>
