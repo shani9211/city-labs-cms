@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>통합고객관리포털 -CMS</title>
+    <!--favicon-->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+    <!-- Vector CSS -->
+    <link
+      href="assets/plugins/vectormap/jquery-jvectormap-2.0.2.css"
+      rel="stylesheet"
+    />
+    <!-- simplebar CSS-->
+    <link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
+    <!-- Bootstrap core CSS-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- animate CSS-->
+    <link href="assets/css/animate.css" rel="stylesheet" type="text/css" />
+    <!-- Icons CSS-->
+    <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+    <!-- Sidebar CSS-->
+    <link href="assets/css/sidebar-menu.css" rel="stylesheet" />
+    <!-- Custom Style-->
+    <link href="assets/css/app-style.css" rel="stylesheet" />
+    <!-- skins CSS-->
+    <link href="assets/css/skins.css" rel="stylesheet" />
+     <!--Data Tables -->
+  <link href="assets/plugins/bootstrap-datatable/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css">
+  <link href="assets/plugins/bootstrap-datatable/css/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css">
+ <link rel="stylesheet" href="assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css"/>
+    <!-- After Market CSS -->
+    <!-- <link href="assets/css/dashboard.css" rel="stylesheet" /> -->
+    <link href="assets/css/topheader.css" rel="stylesheet" />
+    <link href="assets/css/corporate-user.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- start loader -->
+    <!-- <div id="pageloader-overlay" class="visible incoming">
+      <div class="loader-wrapper-outer">
+        <div class="loader-wrapper-inner"><div class="loader"></div></div>
+      </div>
+    </div> -->
+    <!-- end loader -->
+
+    <!-- Start wrapper-->
+    <div id="wrapper">
+      <!-- start topbar design  -->
+
+      <nav class="navbar navbar-expand-md bg-white sticky-top">
+        <div class="logo">
+          <a class="navbar-brand" href="#">
+            <img src="assets/images/logo.svg" alt="logo" />
+          </a>
+        </div>
+
+        <ol class="navbar-nav mr-auto breadcrumbnav">
+          <span
+            ><i class="zmdi zmdi-home" style="font-size: 20px"></i>
+            <li><a href="#">메인</a></li></span
+          >
+          <li class="breadcrumbnav-item">대시보드</li>
+        </ol>
+
+        <ul class="navbar-nav navlogin">
+          <li class="nav-item menu-right-1">
+            <a class="nav-link" href="#">2021-07-21 수요일 </a>
+          </li>
+          <li class="nav-item vertical-border" >|</li>
+          <!-- <li class="nav-item menu-right-2">
+            <a class="nav-link" href="#">로그인</a>
+          </li> -->
+          <li class="nav-item menu-right-2">
+            <a
+              class="nav-link dropdown-toggle dropdown-toggle-nocaret"
+              data-toggle="dropdown"
+              href="#"
+            >홍길동(관리자)
+              <!-- <span class="user-profile"
+                ><img
+                  src="assets/images/login-user-img.png"
+                  class="img-circle"
+                  alt="user avatar"
+              /></span> -->
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li class="dropdown-item user-details">
+                <a href="javaScript:void();">
+                  <div class="media">
+                    <div class="avatar">
+                      <img
+                        class="align-self-start mr-3"
+                        src="assets/images/login-user-img.png"
+                        alt="user avatar"
+                      />
+                    </div>
+                    <div class="media-body">
+                      <h6 class="mt-2 user-title">Sarajhon Mccoy</h6>
+                      <p class="user-subtitle">mccoy@example.com</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="dropdown-divider"></li>
+              <!-- <li class="dropdown-item">
+                <i class="icon-envelope mr-2"></i> Profile
+              </li> -->
+              <li class="dropdown-divider"></li>
+              <li class="dropdown-item">
+                <i class="icon-wallet mr-2"></i> Profile
+              </li>
+              <li class="dropdown-divider"></li>
+              <li class="dropdown-item">
+                <i class="icon-settings mr-2"></i> Setting
+              </li>
+              <li class="dropdown-divider"></li>
+              <li class="dropdown-item">
+                <i class="icon-power mr-2"></i> Logout
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <!--end  topbar design   -->
+
+      <div class="container-fluid main-section-wrapper">
+        <div class="row">
+          <div class="col-md-2 sidebar-column">
+            <ul class="sidebar-menu">
+              <!-- <li class="sidebar-header">MAIN NAVIGATION</li> -->
+              <li>
+                <a href="/dashboard.html" class="waves-effect">
+                  <i class="zmdi zmdi-view-dashboard"></i>
+                  <span>Dashboard</span>
+                </a>
+               
+              </li>
+              <li>
+                <a href="javaScript:void();" class="waves-effect">
+                  <i class="zmdi zmdi-layers"></i>
+                  <span>KP-DID 관리</span>
+                  <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="sidebar-submenu">
+                  <li>
+                    <a href="Individual-user.html"
+                      ><i
+                        class="zmdi zmdi-chevron-right"
+                        style="font-size: 16px"
+                      ></i
+                      >개인회원</a
+                    >
+                  </li>
+                  <li>
+                    <a href="corporate-user.html"
+                      ><i
+                        class="zmdi zmdi-chevron-right"
+                        style="font-size: 16px"
+                      ></i
+                      >법인회원</a
+                    >
+                  </li>
+
+                  <li>
+                    <a href="corporate-approval.html"
+                      ><i
+                        class="zmdi zmdi-chevron-right"
+                        style="font-size: 16px"
+                      ></i
+                      >법인승인</a
+                    >
+                  </li>
+                  <!-- <li>
+                    <a href="ui-nav-tabs.html"
+                      ><i class="zmdi zmdi-dot-circle-alt"></i> Nav Tabs</a
+                    >
+                  </li> -->
+                </ul>
+              </li>
+              <li>
+                <a href="javaScript:void();" class="waves-effect">
+                  <i class="zmdi zmdi-card-travel"></i>
+                  <span>기관관리</span>
+                  <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="sidebar-submenu">
+                  <li>
+                    <a href="issuing-institution.html"
+                      ><i
+                        class="zmdi zmdi-chevron-right"
+                        style="font-size: 16px"
+                      ></i
+                      >기관 관리</a
+                    >
+                  </li>
+                  <li>
+                    <a href="verifying-institution.html"
+                      ><i
+                        class="zmdi zmdi-chevron-right"
+                        style="font-size: 16px"
+                      ></i
+                      >검증기관</a
+                    >
+                  </li>
+
+                 
+                </ul>
+              </li>
+              <li>
+                <a href="javaScript:void();" class="waves-effect">
+                  <i class="zmdi zmdi-shield-security"></i>
+                  <span>인증서관리</span>
+                  <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="sidebar-submenu">
+                  <li>
+                    <a href="Individual-user.html"
+                      ><i
+                        class="zmdi zmdi-chevron-right"
+                        style="font-size: 16px"
+                      ></i
+                      >기관 관리</a
+                    >
+                  </li>
+                  <li>
+                    <a href="corporate-user.html"
+                      ><i
+                        class="zmdi zmdi-chevron-right"
+                        style="font-size: 16px"
+                      ></i
+                      >검증기관</a
+                    >
+                  </li>
+
+                  <!-- <li>
+                    <a href="corporate-approval.html"
+                      ><i
+                        class="zmdi zmdi-chevron-right"
+                        style="font-size: 16px"
+                      ></i>법인승인</a>
+                  </li> -->
+                </ul>
+              </li>
+              <li>
+                <a href="javaScript:void();" class="waves-effect">
+                  <i class="zmdi zmdi-view-dashboard"></i>
+                  <span>블록체인</span>
+                  <!-- <i class="fa fa-angle-left pull-right"></i> -->
+                </a>
+              </li>
+              <li>
+                <a href="javaScript:void();" class="waves-effect">
+                  <i class="zmdi zmdi-account-circle"></i>
+                  <span>마이데이터</span>
+                  <!-- <i class="fa fa-angle-left pull-right"></i> -->
+                </a>
+              </li>
+              <li>
+                <a href="javaScript:void();" class="waves-effect">
+                  <i class="zmdi zmdi-chart"></i>
+                  <span>리포트</span>
+                  <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="sidebar-submenu">
+                  <li>
+                    <a href="individual-member.html"
+                      ><i
+                        class="zmdi zmdi-chevron-right"
+                        style="font-size: 16px"
+                      ></i
+                      >기관 관리</a
+                    >
+                  </li>
+                  <li>
+                    <a href="corporate-member.html"
+                      ><i
+                        class="zmdi zmdi-chevron-right"
+                        style="font-size: 16px"
+                      ></i
+                      >검증기관</a
+                    >
+                  </li>
+
+               
+                </ul>
+              </li>
+              <li>
+                <a href="javaScript:void();" class="waves-effect">
+                  <i class="zmdi zmdi-assignment"></i>
+                  <span>운영관리</span>
+                  <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="sidebar-submenu">
+                  <li>
+                    <a href="operations-management.html"
+                      ><i
+                        class="zmdi zmdi-chevron-right"
+                        style="font-size: 16px"
+                      ></i
+                      >운영관리</a
+                    >
+                  </li>
+                  <li>
+                    <a href="faq.html"
+                      ><i
+                        class="zmdi zmdi-chevron-right"
+                        style="font-size: 16px"
+                      ></i
+                      >FAQ</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="javaScript:void();" class="waves-effect">
+                  <i class="zmdi zmdi-settings"></i>
+                  <span>설정</span>
+                  <i class="fa fa-angle-left pull-right"></i>
+                  <ul class="sidebar-submenu">
+                    <li>
+                      <a href="institutions-list.html"
+                        ><i
+                          class="zmdi zmdi-chevron-right"
+                          style="font-size: 16px"
+                        ></i
+                        >기관목록</a
+                      >
+                    </li>
+                    <li>
+                      <a href="users-list.html"
+                        ><i
+                          class="zmdi zmdi-chevron-right"
+                          style="font-size: 16px"
+                        ></i
+                        >사용자목록</a
+                      >
+                    </li>
+
+                    <li>
+                      <a href="authorization-settings.html"
+                        ><i
+                          class="zmdi zmdi-chevron-right"
+                          style="font-size: 16px"
+                        ></i
+                        >>권한설정</a
+                      >
+                    </li>
+                    <li>
+                      <a href="access-history.html"
+                        ><i
+                          class="zmdi zmdi-chevron-right"
+                          style="font-size: 16px"
+                        ></i
+                        >>접속이력</a
+                      >
+                    </li>
+                  </ul>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Individual page  Content-->
+          <div class="col-md-10 .main-section">
+            <div class="container-fluid">
+                <!-- Individual page  Content-->
+               <!--First  Row-->
+               <div class="row">
+                <div class="col-lg-12 main-card-section">
+                   <div class="card-section mt-2">
+                      <div class="card-body card-body-section"> 
+                        <ul class="nav nav-tabs nav-tabs-primary">
+                          <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#tabe-1"> <span class="hidden-xs">발급목록</span></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#tabe-2"> <span class="hidden-xs">폐기목록</span></a>
+                          </li>
+                        
+                        </ul>
+        
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                          <div id="tabe-1" class=" tab-pane active">
+                           <div class="row">
+                            <div class="col-lg-12 mt-4 pb-4">
+                        
+                                <div class="card" >
+                                 <div class="card-body "> 
+                               <!-- date -->
+                              <div id="date-container" class="row">
+                               <div class="input-group date col-sm-2">
+                                <input  type="text"  placeholder="시작일" class="form-control" id="from-dated"/><span class="input-group-addon" ><span class="icon material-icons-outlined" >date_range</span ></span >
+                              </div>
+                               <div class="input-group date col-sm-2">
+                                <input
+                                  type="text"
+                                  placeholder="End Date"
+                                  class="form-control"
+                                  id="from-dated"/><span class="input-group-addon" ><span class="icon material-icons-outlined"  >date_range</span></span >
+                              </div>
+                              <div class="dropdown col-sm-2" style="padding-left: 10px; padding-right: 10px;">
+                                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">상태
+
+                                <span class="caret"></span></button>
+                                <ul class="dropdown-menu w-100">
+                                  <li class=" nav-item dropdown-header">Dropdown header 1</li>
+                                  <li class="nav-item"><a class="nav-link" href="#">HTML</a></li>
+                                  <li class="nav-item"><a class="nav-link"  href="#">CSS</a></li>
+                                  <li  class="nav-item"><a  class="nav-link"  href="#">JavaScript</a></li>
+                                  
+                                </ul>
+                              </div>
+                              
+                            </div>
+
+                            <div class="row mt-5 " >
+
+                              <!-- <input type="text" class="input-group.search " id="myInputTextField" placeholder="search here"> -->
+                              <form class="search-bar ">
+                                <input type="text" class="form-control" placeholder="Enter keywords" id="myInputTextField" >
+                                 <a href="javascript:void();"><i class="icon-magnifier"></i></a>
+                              </form>
+                            </div>
+
+                              </div>
+                                  
+                                
+                               </div>
+                             
+                            </div>
+                            
+                           </div>
+                           <!-- data table Start -->
+                           <div class="row">
+                            <div class="col-lg-12">
+                              <h5>발급목록 <span class="ml-3 table-subtitle " >5건 / 총9건</span></h5>
+                              <div class="card ">
+                                <div class="card-header"> </div>
+                                
+                                <div class="card-body " >
+                                  <div class="table-responsive">
+                                  <table id="default-datatable" class="table table-bordered">
+                                    <thead>
+                                      <tr>
+                                        <th>S No</th>
+                                        <th>KP-DID</th>
+                                        <th>PI</th>
+                                        <th>이름</th>
+                                        <th>휴대폰번호</th>
+                                        <th>발급일시</th>
+                                        <th>상태</th>
+                                        <th>관리</th>
+                                      </tr>
+                                      <tbody>
+                                       <tr>
+                                        <td>1</td>
+                                         <td>0x000….001  </td>
+                                         <td>홍길동</td>
+                                         <td>010-1234-5678</td>
+                                         <td>2021.08.01</td>
+                                         <td>관리자폐기  </td>
+                                         <td>홍길동</td>
+                                         <td><a href="corporate-user-details.html"> 보기</a></td>
+                                       
+                                       </tr>
+                                       <tr>
+                                        <td>2</td>
+                                         <td>0x000….001  </td>
+                                         <td>홍길동</td>
+                                         <td>010-1234-5678</td>
+                                         <td>2021.08.01</td>
+                                         <td>관리자폐기  </td>
+                                         <td>홍길동</td>
+                                         <td><a href="corporate-user-details.html"> 보기</a></td>
+                                       
+                                       </tr>
+                                       <tr>
+                                        <td>3</td>
+                                         <td>0x000….001  </td>
+                                         <td>홍길동</td>
+                                         <td>010-1234-5678</td>
+                                         <td>2021.08.01</td>
+                                         <td>관리자폐기  </td>
+                                         <td>홍길동</td>
+                                         <td><a href="#"> 보기</a></td>
+                                       
+                                       </tr>
+                                       <tr>
+                                        <td>4</td>
+                                         <td>0x000….001  </td>
+                                         <td>홍길동</td>
+                                         <td>010-1234-5678</td>
+                                         <td>2021.08.01</td>
+                                         <td>관리자폐기  </td>
+                                         <td>홍길동</td>
+                                         <td><a href="#"> 보기</a></td>
+                                       
+                                       </tr>
+                                       <tr>
+                                        <td>5</td>
+                                         <td>0x000….001  </td>
+                                         <td>홍길동</td>
+                                         <td>010-1234-5678</td>
+                                         <td>2021.08.01</td>
+                                         <td>관리자폐기  </td>
+                                         <td>홍길동</td>
+                                         <td><a href="#"> 보기</a></td>
+                                       
+                                       </tr>
+                                       <tr>
+                                        <td>6</td>
+                                         <td>0x000….001  </td>
+                                         <td>홍길동</td>
+                                         <td>010-1234-5678</td>
+                                         <td>2021.08.01</td>
+                                         <td>관리자폐기  </td>
+                                         <td>홍길동</td>
+                                         <td><a href="#"> 보기</a></td>
+                                       
+                                       </tr>
+                                       <tr>
+                                        <td>7</td>
+                                         <td>0x000….001  </td>
+                                         <td>홍길동</td>
+                                         <td>010-1234-5678</td>
+                                         <td>2021.08.01</td>
+                                         <td>관리자폐기  </td>
+                                         <td>홍길동</td>
+                                         <td><a href="#"> 보기</a></td>
+                                       
+                                       </tr>
+                                       <tr>
+                                        <td>8</td>
+                                         <td>0x000….001  </td>
+                                         <td>홍길동</td>
+                                         <td>010-1234-5678</td>
+                                         <td>2021.08.01</td>
+                                         <td>관리자폐기  </td>
+                                         <td>홍길동</td>
+                                         <td><a href="#"> 보기</a></td>
+                                       
+                                       </tr>
+                                       <tr>
+                                        <td>9</td>
+                                         <td>0x000….001  </td>
+                                         <td>홍길동</td>
+                                         <td>010-1234-5678</td>
+                                         <td>2021.08.01</td>
+                                         <td>관리자폐기  </td>
+                                         <td>홍길동</td>
+                                         <td><a href="#"> 보기</a></td>
+                                       
+                                       </tr>
+                                       <tr>
+                                        <td>10</td>
+                                         <td>0x000….001  </td>
+                                         <td>홍길동</td>
+                                         <td>010-1234-5678</td>
+                                         <td>2021.08.01</td>
+                                         <td>관리자폐기  </td>
+                                         <td>홍길동</td>
+                                         <td><a href="#"> 보기</a></td>
+                                       
+                                       </tr>
+                                       <tr>
+                                        <td>11</td>
+                                         <td>0x000….001  </td>
+                                         <td>홍길동</td>
+                                         <td>010-1234-5678</td>
+                                         <td>2021.08.01</td>
+                                         <td>관리자폐기  </td>
+                                         <td>홍길동</td>
+                                         <td><a href="#"> 보기</a></td>
+                                       
+                                       </tr>
+                                       <tr>
+                                        <td>12</td>
+                                         <td>0x000….001  </td>
+                                         <td>홍길동</td>
+                                         <td>010-1234-5678</td>
+                                         <td>2021.08.01</td>
+                                         <td>관리자폐기  </td>
+                                         <td>홍길동</td>
+                                         <td><a href="#"> 보기</a></td>
+                                       
+                                       </tr>
+                                       <tr>
+                                        <td>13</td>
+                                         <td>0x000….001  </td>
+                                         <td>홍길동</td>
+                                         <td>010-1234-5678</td>
+                                         <td>2021.08.01</td>
+                                         <td>관리자폐기  </td>
+                                         <td>홍길동</td>
+                                         <td><a href="#"> 보기</a></td>
+                                       
+                                       </tr>
+                                       <tr>
+                                        <td>14</td>
+                                         <td>0x000….001  </td>
+                                         <td>홍길동</td>
+                                         <td>010-1234-5678</td>
+                                         <td>2021.08.01</td>
+                                         <td>관리자폐기  </td>
+                                         <td>홍길동</td>
+                                         <td><a href="#"> 보기</a></td>
+                                       
+                                       </tr>
+                                       <tr>
+                                        <td>15</td>
+                                         <td>0x000….001  </td>
+                                         <td>홍길동</td>
+                                         <td>010-1234-5678</td>
+                                         <td>2021.08.01</td>
+                                         <td>관리자폐기  </td>
+                                         <td>홍길동</td>
+                                         <td><a href="#"> 보기</a></td>
+                                       
+                                       </tr>
+                                       <tr>
+                                        <td>16</td>
+                                         <td>0x000….001  </td>
+                                         <td>홍길동</td>
+                                         <td>010-1234-5678</td>
+                                         <td>2021.08.01</td>
+                                         <td>관리자폐기  </td>
+                                         <td>홍길동</td>
+                                         <td><a href="#"> 보기</a></td>
+                                       
+                                       </tr>
+                                       <tr>
+                                        <td>17</td>
+                                         <td>0x000….001  </td>
+                                         <td>홍길동</td>
+                                         <td>010-1234-5678</td>
+                                         <td>2021.08.01</td>
+                                         <td>관리자폐기  </td>
+                                         <td>홍길동</td>
+                                         <td><a href="#"> 보기</a></td>
+                                       
+                                       </tr>
+                                       <tr>
+                                        <td>18</td>
+                                         <td>0x000….001  </td>
+                                         <td>홍길동</td>
+                                         <td>010-1234-5678</td>
+                                         <td>2021.08.01</td>
+                                         <td>관리자폐기  </td>
+                                         <td>홍길동</td>
+                                         <td><a href="#"> 보기</a></td>
+                                       
+                                       </tr>
+                                       <tr>
+                                        <td>19</td>
+                                         <td>0x000….001  </td>
+                                         <td>홍길동</td>
+                                         <td>010-1234-5678</td>
+                                         <td>2021.08.01</td>
+                                         <td>관리자폐기  </td>
+                                         <td>홍길동</td>
+                                         <td><a href="#"> 보기</a></td>
+                                       
+                                       </tr>
+                                       <tr>
+                                        <td>20</td>
+                                         <td>0x000….001  </td>
+                                         <td>홍길동</td>
+                                         <td>010-1234-5678</td>
+                                         <td>2021.08.01</td>
+                                         <td>관리자폐기  </td>
+                                         <td>홍길동</td>
+                                         <td><a href="#"> 보기</a></td>
+                                       
+                                       </tr>
+                                       <tr>
+                                        <td>21</td>
+                                         <td>0x000….001  </td>
+                                         <td>홍길동</td>
+                                         <td>010-1234-5678</td>
+                                         <td>2021.08.01</td>
+                                         <td>관리자폐기  </td>
+                                         <td>홍길동</td>
+                                         <td><a href="#"> 보기</a></td>
+                                       
+                                       </tr>
+
+                                       
+                                      
+                                      </tbody>
+                                    </thead>
+                                    
+                                
+                                </table>
+                                </div>
+                                </div>
+                              </div>
+                             </div>
+                          </div>
+                          <!-- End Row-->
+                   
+                          </div>
+
+                          <div id="tabe-2" class="tab-pane fade">
+                            <div class="row">
+                              <div class="col-lg-12 mt-4 pb-4">
+                          
+                                  <div class="card pt-4 pb-4"  >
+                                     <div class="card-body "> 
+                                  
+                         
+                                 <!-- date -->
+                                <div id="date-container" class="row">
+                                 <div class="input-group date col-sm-2">
+                                  <input  type="text"  placeholder="시작일" class="form-control" id="from-dated"/><span class="input-group-addon" ><span class="icon material-icons-outlined" >date_range</span ></span >
+                                </div>
+                                 <div class="input-group date col-sm-2">
+                                  <input
+                                    type="text"
+                                    placeholder="End Date"
+                                    class="form-control"
+                                    id="from-dated"/><span class="input-group-addon" ><span class="icon material-icons-outlined"  >date_range</span></span >
+                                </div>
+                                <div class="dropdown col-sm-2" style="padding-left: 10px; padding-right: 10px;">
+                                  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">폐기사유
+                                  <span class="caret"></span></button>
+                                  <ul class="dropdown-menu w-100">
+                                    <li class=" nav-item dropdown-header">Dropdown header 1</li>
+                                    <li class="nav-item"><a class="nav-link" href="#">HTML</a></li>
+                                    <li class="nav-item"><a class="nav-link"  href="#">CSS</a></li>
+                                    <li  class="nav-item"><a  class="nav-link"  href="#">JavaScript</a></li>
+                                    
+                                  </ul>
+                                </div>
+                              </div>
+                              </div>
+  
+                               <div class="row mt-5 " >
+  
+                                <!-- <input type="text" class="input-group.search " id="myInputTextField" placeholder="search here"> -->
+                                 <form class="search-bar ">
+                                  <input type="search" class="form-control" placeholder="Enter keywords" id="filterbox" >
+                                   <a href="javascript:void();"><i class="icon-magnifier"></i></a>
+                                 </form>
+                                 </div>
+  
+                                </div>
+                                    
+                                  
+                                 </div>
+                               
+                              </div>
+                            
+                             
+                             <div class="row">
+                               <div class="col-lg-12">
+                                 <h5 id="page">폐기목록 <span class="ml-4 table-subtitle">( 5건 / 총 9건)</span>
+                                </h5>
+                                 <div class="card">
+                                   <div class="card-header">
+                                     <div class="card-body">
+                                    <div class="table-responsive " >
+
+                                      <table id="data-table" class="table table-bordered">
+                                        <thead>
+                                          <tr>
+                                            <th>S No</th>
+                                            <th>KP-DID</th>
+                                            <th>사업자명</th>
+                                            <th>폐기사유</th>
+                                            <th>폐기일시</th>
+                                            <th>폐기사유</th>
+                                            <th>처리자</th>
+                                            <th>보기</th>
+                                          </tr>
+                                          <tbody>
+                                           <tr>
+                                            <td>1</td>
+                                             <td>0x000….001  </td>
+                                             <td>홍길동</td>
+                                             <td>010-1234-5678</td>
+                                             <td>2021.08.01</td>
+                                             <td>관리자폐기  </td>
+                                             <td>홍길동</td>
+                                             <td><a href="#view_details_kp_did" data-toggle="modal"> 보기</a></td>
+                                           
+                                           </tr>
+                                           <tr>
+                                            <td>2</td>
+                                             <td>0x000….001  </td>
+                                             <td>홍길동</td>
+                                             <td>010-1234-5678</td>
+                                             <td>2021.08.01</td>
+                                             <td>관리자폐기  </td>
+                                             <td>홍길동</td>
+                                             <td><a href="#view_details_kp_did" data-toggle="modal"> 보기</a></td>
+                                           
+                                           </tr>
+                                           <tr>
+                                            <td>3</td>
+                                             <td>0x000….001  </td>
+                                             <td>홍길동</td>
+                                             <td>010-1234-5678</td>
+                                             <td>2021.08.01</td>
+                                             <td>관리자폐기  </td>
+                                             <td>홍길동</td>
+                                             <td><a href="#"> 보기</a></td>
+                                           
+                                           </tr>
+                                           <tr>
+                                            <td>4</td>
+                                             <td>0x000….001  </td>
+                                             <td>홍길동</td>
+                                             <td>010-1234-5678</td>
+                                             <td>2021.08.01</td>
+                                             <td>관리자폐기  </td>
+                                             <td>홍길동</td>
+                                             <td><a href="#"> 보기</a></td>
+                                           
+                                           </tr>
+                                           <tr>
+                                            <td>5</td>
+                                             <td>0x000….001  </td>
+                                             <td>홍길동</td>
+                                             <td>010-1234-5678</td>
+                                             <td>2021.08.01</td>
+                                             <td>관리자폐기  </td>
+                                             <td>홍길동</td>
+                                             <td><a href="#"> 보기</a></td>
+                                           
+                                           </tr>
+                                           <tr>
+                                            <td>6</td>
+                                             <td>0x000….001  </td>
+                                             <td>홍길동</td>
+                                             <td>010-1234-5678</td>
+                                             <td>2021.08.01</td>
+                                             <td>관리자폐기  </td>
+                                             <td>홍길동</td>
+                                             <td><a href="#"> 보기</a></td>
+                                           
+                                           </tr>
+                                           <tr>
+                                            <td>7</td>
+                                             <td>0x000….001  </td>
+                                             <td>홍길동</td>
+                                             <td>010-1234-5678</td>
+                                             <td>2021.08.01</td>
+                                             <td>관리자폐기  </td>
+                                             <td>홍길동</td>
+                                             <td><a href="#"> 보기</a></td>
+                                           
+                                           </tr>
+                                           <tr>
+                                            <td>8</td>
+                                             <td>0x000….001  </td>
+                                             <td>홍길동</td>
+                                             <td>010-1234-5678</td>
+                                             <td>2021.08.01</td>
+                                             <td>관리자폐기  </td>
+                                             <td>홍길동</td>
+                                             <td><a href="#"> 보기</a></td>
+                                           
+                                           </tr>
+                                           <tr>
+                                            <td>9</td>
+                                             <td>0x000….001  </td>
+                                             <td>홍길동</td>
+                                             <td>010-1234-5678</td>
+                                             <td>2021.08.01</td>
+                                             <td>관리자폐기  </td>
+                                             <td>홍길동</td>
+                                             <td><a href="#"> 보기</a></td>
+                                           
+                                           </tr>
+                                           <tr>
+                                            <td>10</td>
+                                             <td>0x000….001  </td>
+                                             <td>홍길동</td>
+                                             <td>010-1234-5678</td>
+                                             <td>2021.08.01</td>
+                                             <td>관리자폐기  </td>
+                                             <td>홍길동</td>
+                                             <td><a href="#"> 보기</a></td>
+                                           
+                                           </tr>
+                                           <tr>
+                                            <td>11</td>
+                                             <td>0x000….001  </td>
+                                             <td>홍길동</td>
+                                             <td>010-1234-5678</td>
+                                             <td>2021.08.01</td>
+                                             <td>관리자폐기  </td>
+                                             <td>홍길동</td>
+                                             <td><a href="#"> 보기</a></td>
+                                           
+                                           </tr>
+                                           <tr>
+                                            <td>12</td>
+                                             <td>0x000….001  </td>
+                                             <td>홍길동</td>
+                                             <td>010-1234-5678</td>
+                                             <td>2021.08.01</td>
+                                             <td>관리자폐기  </td>
+                                             <td>홍길동</td>
+                                             <td><a href="#"> 보기</a></td>
+                                           
+                                           </tr>
+                                           <tr>
+                                            <td>13</td>
+                                             <td>0x000….001  </td>
+                                             <td>홍길동</td>
+                                             <td>010-1234-5678</td>
+                                             <td>2021.08.01</td>
+                                             <td>관리자폐기  </td>
+                                             <td>홍길동</td>
+                                             <td><a href="#"> 보기</a></td>
+                                           
+                                           </tr>
+                                           <tr>
+                                            <td>14</td>
+                                             <td>0x000….001  </td>
+                                             <td>홍길동</td>
+                                             <td>010-1234-5678</td>
+                                             <td>2021.08.01</td>
+                                             <td>관리자폐기  </td>
+                                             <td>홍길동</td>
+                                             <td><a href="#"> 보기</a></td>
+                                           
+                                           </tr>
+                                           <tr>
+                                            <td>15</td>
+                                             <td>0x000….001  </td>
+                                             <td>홍길동</td>
+                                             <td>010-1234-5678</td>
+                                             <td>2021.08.01</td>
+                                             <td>관리자폐기  </td>
+                                             <td>홍길동</td>
+                                             <td><a href="#"> 보기</a></td>
+                                           
+                                           </tr>
+                                           <tr>
+                                            <td>16</td>
+                                             <td>0x000….001  </td>
+                                             <td>홍길동</td>
+                                             <td>010-1234-5678</td>
+                                             <td>2021.08.01</td>
+                                             <td>관리자폐기  </td>
+                                             <td>홍길동</td>
+                                             <td><a href="#"> 보기</a></td>
+                                           
+                                           </tr>
+                                           <tr>
+                                            <td>17</td>
+                                             <td>0x000….001  </td>
+                                             <td>홍길동</td>
+                                             <td>010-1234-5678</td>
+                                             <td>2021.08.01</td>
+                                             <td>관리자폐기  </td>
+                                             <td>홍길동</td>
+                                             <td><a href="#"> 보기</a></td>
+                                           
+                                           </tr>
+                                           <tr>
+                                            <td>18</td>
+                                             <td>0x000….001  </td>
+                                             <td>홍길동</td>
+                                             <td>010-1234-5678</td>
+                                             <td>2021.08.01</td>
+                                             <td>관리자폐기  </td>
+                                             <td>홍길동</td>
+                                             <td><a href="#"> 보기</a></td>
+                                           
+                                           </tr>
+                                           <tr>
+                                            <td>19</td>
+                                             <td>0x000….001  </td>
+                                             <td>홍길동</td>
+                                             <td>010-1234-5678</td>
+                                             <td>2021.08.01</td>
+                                             <td>관리자폐기  </td>
+                                             <td>홍길동</td>
+                                             <td><a href="#"> 보기</a></td>
+                                           
+                                           </tr>
+                                           <tr>
+                                            <td>20</td>
+                                             <td>0x000….001  </td>
+                                             <td>홍길동</td>
+                                             <td>010-1234-5678</td>
+                                             <td>2021.08.01</td>
+                                             <td>관리자폐기  </td>
+                                             <td>홍길동</td>
+                                             <td><a href="#"> 보기</a></td>
+                                           
+                                           </tr>
+                                           <tr>
+                                            <td>21</td>
+                                             <td>0x000….001  </td>
+                                             <td>홍길동</td>
+                                             <td>010-1234-5678</td>
+                                             <td>2021.08.01</td>
+                                             <td>관리자폐기  </td>
+                                             <td>홍길동</td>
+                                             <td><a href="#"> 보기</a></td>
+                                           
+                                           </tr>
+
+                                           
+                                          
+                                          </tbody>
+                                        </thead>
+
+                                       
+                                      </table>
+
+                                    </div>
+                                     </div>
+                                   </div>
+                                 </div>
+                               </div>
+                             </div>
+                             
+                          </div>
+                        <!-- tab pane 2 data end -->
+                        </div>
+                      </div>
+                   </div>
+        
+                </div>
+                </div>
+             <!-- End First  Row-->
+             
+             <!-- popup form for deatails of KP-DID start -->
+             <div class="modal  " id="view_details_kp_did"  >
+              <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                  <!-- <a href="#" class="mt-3 ml-2">발급기관 상세 </a> -->
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    
+                    <h5 class="modal-title">KP-DID 상세보기</h5>
+                   
+                  </div>
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    
+                    <form id="kp_Did_user_profile">
+                                    
+                      <div class="form-group row">
+                        <label for="input-10" class="col-sm-2 col-form-label">발급기관</label>
+                        <div class="col-sm-4">
+                          <input type="text" class="form-control" id="input-10" name="시티랩스" value="시티랩스" disabled>
+                        </div>
+                        <label for="input-11" class="col-sm-2 col-form-label">대표자</label>
+                        <div class="col-sm-4">
+                          <input type="text" class="form-control" id="input-11" name="대표자" value="홍길동" disabled>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="input-12" class="col-sm-2 col-form-label">사업자등록번호
+                        </label>
+                        <div class="col-sm-4">
+                          <input type="text" class="form-control" id="input-12" name="사업자등록번호" value="12345678910" disabled>
+                        </div>
+                        <label for="input-13" class="col-sm-2 col-form-label">대표 이메일
+                        </label>
+                        <div class="col-sm-4">
+                          <input type="text" class="form-control" id="input-13" name="대표 이메일" value="post@epost.co.kr " disabled>
+                        </div>
+                      </div>
+                     
+                      <div class="form-group row">
+                        <label for="input-12" class="col-sm-2 col-form-label">신청인
+                        </label>
+                        <div class="col-sm-4">
+                          <input type="text" class="form-control" id="input-12" name="신청인" value="홍길남" disabled>
+                        </div>
+                        <label for="input-13" class="col-sm-2 col-form-label">부서
+                        </label>
+                        <div class="col-sm-4">
+                          <input type="text" class="form-control" id="input-13" name="경영지원" value="경영지원 " disabled>
+                        </div>
+                      </div>
+                     
+                      
+                      <div class="form-group row">
+                        <label for="input-12" class="col-sm-2 col-form-label">신청인 휴대폰번호
+                        </label>
+                        <div class="col-sm-4">
+                          <input type="text" class="form-control" id="input-12" name="신청인 휴대폰번호" value="010-1234-5678 " disabled>
+                        </div>
+                        <label for="input-13" class="col-sm-2 col-form-label">신청인 이메일
+                        </label>
+                        <div class="col-sm-4">
+                          <input type="text" class="form-control" id="input-13" name="신청인 이메일" value="south@epost.co.kr  " disabled>
+                        </div>
+                      </div>
+                      
+                      <div class="form-group row">
+                        <label for="input-12" class="col-sm-2 col-form-label">PI </label>
+                        <div class="col-sm-4">
+                          <input type="text" class="form-control" id="input-12" name="PI" value="KRalkdfandfladfndfla001  " disabled>
+                        </div>
+                        <label for="input-13" class="col-sm-2 col-form-label">KP-DID </label>
+                        <div class="col-sm-4">
+                          <input type="text" class="form-control" id="input-13" name="01012345678" value="0x000000i2nvi2n2nisdiaf001 " disabled>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="input-12" class="col-sm-2 col-form-label">발급일시 </label>
+                        <div class="col-sm-4">
+                          <input type="text" class="form-control" id="input-12" name="date" value="2021.07.21 12:55:56  " disabled>
+                        </div>
+                        <label for="input-13" class="col-sm-2 col-form-label">상태 </label>
+                        <div class="col-sm-4">
+                          <input type="text" class="form-control" id="input-13" name="폐기완료   " value="폐기완료    " disabled>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="input-12" class="col-sm-2 col-form-label">폐기일시 </label>
+                        <div class="col-sm-4">
+                          <input type="text" class="form-control" id="input-12" name="date" value="2021.07.21 15:00:02 " disabled>
+                        </div>
+                        <label for="input-13" class="col-sm-2 col-form-label">폐기사유 </label>
+                        <div class="col-sm-4">
+                          <input type="text" class="form-control" id="input-13" name="사용자폐기   " value="사용자폐기    " disabled>
+                        </div>
+                      </div>
+      
+                    
+                      
+                    </form>
+                  </div>
+            
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary text-center"  data-dismiss="modal">취소</button>
+                      <!-- <button type="button" id="user-profile" class="btn btn-primary"  onclick="userProfile()">폐기 </button> -->
+                      <!-- <button type="button" class="btn btn-danger" id="shani" onclick="myfunction()" data-dismiss="modal">Close</button> -->
+                    </div>
+                    
+                  </div>
+            
+                </div>
+              </div>
+            </div>
+
+
+              <!-- popup form for deatails of KP-DID end -->
+
+
+
+            <!-- footer section start -->
+            <div class="container"><div class="row"></div>
+                </div></div>
+             
+
+              <!--start overlay-->
+              <div class="overlay toggle-menu"></div>
+              <!--end overlay-->
+            </div>
+            <!-- End container-fluid-->
+          </div> 
+         <!--End Dashboard Content-->
+
+        </div>
+      </div>
+      
+    </div>
+    <!--End wrapper-->
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- simplebar js -->
+    <script src="assets/plugins/simplebar/js/simplebar.js"></script>
+    <!-- sidebar-menu js -->
+    <script src="assets/js/sidebar-menu.js"></script>
+    <!-- loader scripts -->
+    <script src="assets/js/jquery.loading-indicator.js"></script>
+  
+    <!-- Easy Pie Chart JS -->
+    
+    <script src="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script src="assets/plugins/jquery-knob/jquery.knob.js"></script>
+     <!-- Custom scripts -->
+     <script src="assets/js/app-script.js"></script>
+     <script src="assets/js/corporate-user.js"></script>
+  <!--Data Tables js-->
+  <script src="assets/plugins/bootstrap-datatable/js/jquery.dataTables.min.js"></script>
+  <script src="assets/plugins/bootstrap-datatable/js/dataTables.bootstrap4.min.js"></script>
+  <script src="assets/plugins/bootstrap-datatable/js/dataTables.buttons.min.js"></script>
+  <script src="assets/plugins/bootstrap-datatable/js/buttons.bootstrap4.min.js"></script>
+    <script>
+      $(function () {
+        $(".knob").knob();
+      });
+    </script>
+    <!-- Index js -->
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>

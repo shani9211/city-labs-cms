@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>통합고객관리포털 -CMS</title>
+    <!--favicon-->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+    <!-- Vector CSS -->
+    <link
+      href="assets/plugins/vectormap/jquery-jvectormap-2.0.2.css"
+      rel="stylesheet"
+    />
+    <!-- simplebar CSS-->
+    <link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
+    <!-- Bootstrap core CSS-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- animate CSS-->
+    <link href="assets/css/animate.css" rel="stylesheet" type="text/css" />
+    <!-- Icons CSS-->
+    <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+    <!-- Sidebar CSS-->
+    <link href="assets/css/sidebar-menu.css" rel="stylesheet" />
+    <!-- Custom Style-->
+    <link href="assets/css/app-style.css" rel="stylesheet" />
+    <!-- skins CSS-->
+    <link href="assets/css/skins.css" rel="stylesheet" />
+    <!-- After Market CSS -->
+    <link href="assets/css/dashboard.css" rel="stylesheet" />
+    <link href="assets/css/topheader.css" rel="stylesheet" />
+
+  </head>
+
+  <body>
+  
+
+    <!-- Start wrapper-->
+    <div id="wrapper">
+      <!-- start topbar design  -->
+
+      <nav class="navbar navbar-expand-md bg-white sticky-top">
+        <div class="logo">
+          <a class="navbar-brand" href="#">
+            <img src="assets/images/logo.svg" alt="logo" />
+          </a>
+        </div>
+
+        <!-- <ol class="navbar-nav mr-auto breadcrumbnav">
+          <span
+            ><i class="icon-home"></i> 
+            <li><a href="#">메인</a></li></span
+          >
+          <li class="breadcrumbnav-item">대시보드</li>
+        </ol> -->
+
+        <div class="display mr-auto">
+          <div class="syllabus ml-4">
+            <span><i class="icon-home"></i> 
+            <a class="ml-2 pl-1" href="#">메인</a></span >
+            <!-- <a href="#">GeeksforGeeks / </a> -->
+          </div>
+        </div>
+       
+
+        <ul class="navbar-nav navlogin">
+          <li class="nav-item menu-right-1">
+            <a class="nav-link" href="#">2021-07-21 수요일 </a>
+          </li>
+          <li class="nav-item vertical-border" >|</li>
+          <!-- <li class="nav-item menu-right-2">
+            <a class="nav-link" href="#">로그인</a>
+          </li> -->
+          <li class="nav-item menu-right-2">
+            <a
+              class="nav-link dropdown-toggle dropdown-toggle-nocaret"
+              data-toggle="dropdown"
+              href="#"
+            >홍길동(관리자)
+              <!-- <span class="user-profile"
+                ><img
+                  src="assets/images/login-user-img.png"
+                  class="img-circle"
+                  alt="user avatar"
+              /></span> -->
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li class="dropdown-item user-details">
+                <a href="javaScript:void();">
+                  <div class="media">
+                    <div class="avatar">
+                      <img
+                        class="align-self-start mr-3"
+                        src="assets/images/login-user-img.png"
+                        alt="user avatar"
+                      />
+                    </div>
+                    <div class="media-body">
+                      <h6 class="mt-2 user-title">Sarajhon Mccoy</h6>
+                      <p class="user-subtitle">mccoy@example.com</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="dropdown-divider"></li>
+              <!-- <li class="dropdown-item">
+                <i class="icon-envelope mr-2"></i> Profile
+              </li> -->
+              <li class="dropdown-divider"></li>
+              <li class="dropdown-item">
+                <i class="icon-wallet mr-2"></i> Profile
+              </li>
+              <li class="dropdown-divider"></li>
+              <li class="dropdown-item">
+                <i class="icon-settings mr-2"></i> Setting
+              </li>
+              <li class="dropdown-divider"></li>
+              <li class="dropdown-item">
+                <i class="icon-power mr-2"></i> Logout
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <!--end  topbar design   -->
+
+      <div class="container-fluid dashboard">
+        <div class="row">
+          <div class="col-md-2 sidebar-column">
+            <ul class="sidebar-menu">
+          
+              <li>
+                  <a href="#" class="waves-effect">
+                    <!-- <i class="zmdi zmdi-view-dashboard"></i> -->
+                    <img src="assets/images/dashboard-icon.svg" alt="" class="custom-icon">
+                    <span>Dashboard</span>
+                  </a>
+                 
+              </li>
+              <li>
+                  <a href="javaScript:void();" class="waves-effect">
+                    <!-- <i class="zmdi zmdi-layers"></i> -->
+                    <img src="assets/images/kp_did.svg" alt="" class="custom-icon">
+                    <span>KP-DID 관리</span>
+                    <i class="fa fa-angle-right pull-right menu-icon"></i>
+                  </a>
+                  <ul class="sidebar-submenu">
+                    <li>
+                      <a href="KPDID/individual-user.html" >개인회원</a >
+                    </li>
+                    <li>
+                      <a href="KPDID/corporate-user.html"
+                        >법인회원</a
+                      >
+                    </li>
+                    <li>
+                      <a href="KPDID/corporate-approval.html"
+                        >법인승인</a
+                      >
+                    </li>
+                   
+                  </ul>
+              </li>
+              <li>
+                  <a href="javaScript:void();" class="waves-effect">
+                    <!-- <i class="zmdi zmdi-card-travel"></i> -->
+                     <img src="assets/images/insmange.svg" alt="" class="custom-icon">
+                    <span>기관관리</span>
+                    <i class="fa fa-angle-right pull-right menu-icon"></i>
+                  </a>
+                  <ul class="sidebar-submenu">
+                    <li>
+                      <a href="InstitutionManagement/issuing-institution.html"
+                        >기관 관리</a>
+                    </li>
+                    <li>
+                      <a href="InstitutionManagement/verifying-institution.html"
+                        >검증기관</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="javaScript:void();" class="waves-effect">
+                    <!-- <i class="zmdi zmdi-shield-security"></i> -->
+                      <img src="assets/images/certificate_mange.svg" alt="" class="custom-icon">
+                    <span>인증서관리</span>
+                    <i class="fa fa-angle-right pull-right menu-icon"></i>
+                  </a>
+                  <ul class="sidebar-submenu">
+                    <li>
+                      <a href="CertificateManagement/certificate-individual-user.html"
+                        >기관 관리</a >
+                    </li>
+                    <li>
+                      <a href="CertificateManagement/certificate-corporate-user.html"
+                        >검증기관</a >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javaScript:void();" class="waves-effect">
+                    <!-- <i class="zmdi zmdi-view-dashboard"></i> -->
+                      <img src="assets/images/blockchain.svg" alt="" class="custom-icon">
+                    <span>블록체인</span>
+                    <i class="fa fa-angle-right pull-right menu-icon"></i>
+                  </a>
+                  <ul class="sidebar-submenu">
+                      <li>
+                        <a href="Blockchain/blockchain.html"  onclick="myFunction()"
+                          >블록체인</a >
+                      </li>
+                    
+                    </ul>
+                </li>
+                <li>
+                  <a href="javaScript:void();" class="waves-effect">
+                    <!-- <i class="zmdi zmdi-account-circle"></i> -->
+                      <img src="assets/images/mydata.svg" alt="" class="custom-icon">
+                    <span>마이데이터</span>
+                    <i class="fa fa-angle-right pull-right menu-icon"></i>
+                  </a>
+                  <ul class="sidebar-submenu">
+                      <li>
+                        <a href="mydata/mydata.html"
+                          >마이데이터</a >
+                      </li>
+                    
+                    </ul>
+                </li>
+                <li>
+                  <a href="javaScript:void();" class="waves-effect">
+                  <img src="assets/images/report.svg" alt="" class="custom-icon">
+                    <span>리포트</span>
+                    <i class="fa fa-angle-right pull-right menu-icon"></i>
+                  </a>
+                  <ul class="sidebar-submenu">
+                    <li>
+                      <a href="Report/individual-user.html"
+                        >기관 관리</a>
+                    </li>
+                    <li>
+                      <a href="Report/corporate-user.html"
+                        >검증기관</a>
+                    </li>
+                  
+                  </ul>
+                </li>
+                <li>
+                  <a href="javaScript:void();" class="waves-effect">
+                   <img src="assets/images/opsmange.svg" alt="" class="custom-icon">
+                    <span>운영관리</span>
+                    <i class="fa fa-angle-right pull-right menu-icon"></i>
+                  </a>
+                  <ul class="sidebar-submenu">
+                    <li>
+                      <a href="OperationManagement/operations-management.html"
+                        >운영관리</a
+                      >
+                    </li>
+                    <li>
+                      <a href="OperationManagement/faq.html"
+                        >FAQ</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                 <li>
+                  <a href="javaScript:void();" class="waves-effect">
+                    <img src="assets/images/settings.svg" alt="" class="custom-icon">
+                    <span>설정</span>
+                    <i class="fa fa-angle-right pull-right menu-icon"></i>
+                  </a>
+                  <ul class="sidebar-submenu">
+                   <li>
+                        <a href="Settings/institutions-list.html"
+                          >기관목록</a >
+                      </li>
+                      <li>
+                        <a href="Settings/users-list.html"
+                          >사용자목록</a>
+                      </li>
+  
+                      <li>
+                        <a href="Settings/authorization-settings.html"
+                          >권한설정</a>
+                      </li>
+                      <li>
+                        <a href="Settings/access-history.html"
+                          >접속이력</a>
+                      </li>
+                  </ul>
+                </li>
+                <!-- <li>
+                  <a href="javaScript:void();" class="waves-effect">
+                  <img src="assets/images/settings.svg" alt="" class="custom-icon">
+                    <span>설정</span>
+                    <i class="fa fa-angle-right pull-right menu-icon"></i>
+                    <ul class="sidebar-submenu">
+                      <li>
+                        <a href="Settings/institutions-list.html"
+                          >기관목록</a >
+                      </li>
+                      <li>
+                        <a href="Settings/users-list.html"
+                          >사용자목록</a>
+                      </li>
+  
+                      <li>
+                        <a href="Settings/authorization-settings.html"
+                          >권한설정</a>
+                      </li>
+                      <li>
+                        <a href="Settings/access-history.html"
+                          >접속이력</a>
+                      </li>
+                    </ul>
+                  </a>
+                </li> -->
+          </ul>
+          </div>
+
+          <!-- Dashboard Content-->
+
+          <div class="col-md-10 .main-section">
+            <div class="container-fluid">
+              <!--Start Dashboard Content-->
+               <!--First  Row-->
+               <div class="row mt-3">
+                <div class="col-12 col-lg-6 col-xl-3">
+                  <div class="card gradient-deepblue card-height "  style="height: 8.2rem;">
+                    <div class="card-body ">
+                      <h5 class="card-title">개인회원</h5>
+                      <div class="  my-3" style="display: flex; flex-direction: row;justify-content: space-between;"  >
+                        <div class="card-icon"  ><img src="assets/images/icon/person.svg" alt=""></div>
+                        <div class="mt-2">
+                        <p class=" card-subtitle text-right small-font">
+                          신규 +20명
+                        </p>
+                       <p class="card-number">2000</p> 
+                       
+                      </div>
+                      </div>
+                     
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 col-xl-3">
+                  <div class="card gradient-deepblue  card-height" style="height: 8.2rem;">
+                    <div class="card-body ">
+                      <h5 class="card-title">법인회원</h5>
+                      <div class="  my-3" style="display: flex; flex-direction: row;justify-content: space-between;"  >
+                        <div class="card-icon" ><img src="assets/images/icon/block-icon.svg" alt=""></div>
+                        <div  class="mt-2">
+
+                        <p class=" card-subtitle text-right small-font">
+                          신규 +20명
+                        </p>
+                       <p class="card-number">2000</p> 
+                       
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 col-xl-3">
+                  <div class="card gradient-deepblue card-height  " style="height: 8.2rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">개인 DID 재발급/폐기</h5>
+                      <div class="  my-3" style="display: flex; flex-direction: row;justify-content: space-between;"  >
+                        <div class="card-icon" ><img src="assets/images/icon/block-icon.svg" alt=""></div>
+                        <div  class="mt-3">
+
+                          <p class="card-number"> 20/25</p>   
+                    
+                      </div>
+                     </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 col-xl-3">
+                  <div class="card gradient-deepblue card-height  " style="height: 8.2rem;">
+                    <div class="card-body ">
+                      <h5 class="card-title">법인 DID 재발급/폐기</h5>
+                      <div class="  my-3" style="display: flex; flex-direction: row;justify-content: space-between;"  >
+                        <div class="card-icon" ><img src="assets/images/icon/block-icon.svg" alt=""></div>
+                        <div class="mt-3" >
+
+                          <p class="card-number"> 20/25</p>   
+                    
+                      </div>
+                     </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!--End Row-->
+
+              <!-- Nav Pills use for tab design  start  -->
+              
+                <div class="row mt-4">
+                  <div class="col-lg-9">
+                    <ul class="nav nav-pills pills" role="tablist" >
+                      <li class="nav-item">
+                        <a class="nav-link active pills-link" data-toggle="pill" href="#piil-1"><span class="hidden-xs">일</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link pills-link " data-toggle="pill" href="#piil-2"> <span class="hidden-xs">주</span></a>
+                      </li>
+                      <li class="nav-item">
+                       <a class="nav-link pills-link" data-toggle="pill" href="#piil-2"> <span class="hidden-xs">월</span></a>
+                     </li>
+             
+                    </ul>
+                    <div class="card graph-card" >
+                       <div class="card-body"> 
+                         <!-- Tab panes -->
+                         <div class="tab-content  graph-tab-content">
+                           <div id="piil-1" class="container tab-pane active">
+                            <div class="card-body">
+                              
+                                <canvas
+                                  id="row-1-chart"
+                                  height="250px;"
+                                  width="800px"
+                                ></canvas>
+                            
+                            </div>
+                             </div>
+                           <div id="piil-2" class="container tab-pane fade">
+                             <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                              <p>It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+                           </div>
+                          
+                           <div id="piil-3" class="container tab-pane fade">
+                             <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                           </div>
+                         </div>
+                       </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                  <h4 class="pt-2">인증서</h4>
+                    <div class="card graph-card" >
+                       <div class="card-body "> 
+                        <div class="table-responsive">
+                          <table class="table align-items-center no-border-top-table">
+                         
+                            <tbody class="text-left">
+                             
+                              <tr>
+                                <td>우편</td>
+                             
+                                <td class="text-bold">2000</td>
+                              </tr>
+                              <tr>
+                                <td >모바일 우편함</td>
+                              
+                                <td class="text-bold">2000</td>
+                              </tr>
+                              <tr>
+                                <td>예금</td>
+                             
+                                <td class="text-bold">2000</td>
+                              </tr>
+                              <tr>
+                                <td>보험</td>
+                             
+                                <td class="text-bold">2000</td>
+                              </tr>
+                              <tr>
+                                <td>쇼핑</td>
+                             
+                                <td class="text-bold">2000</td>
+                              </tr>
+                              <tr>
+                                <td>포스트페이</td>
+                             
+                                <td class="text-bold">2000</td>
+                              </tr>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                         </div>
+                      
+                    
+                   </div>
+                </div>
+              </div>
+              <!-- nav pills tab design End Row -->
+
+              <!-- Row 3 -->
+              <div class="container-fluid" style="padding-bottom: 70px;padding-left: 0; padding-right: 0;">
+                <div class="row row-flex">
+                  
+                  <div class=" col-lg-6 col-md-12  col-xs-12 col-sm-12 " >
+                    <ul class="nav">
+                      <li class="nav-item">
+                        <span class="card-header-text" >최근 발급/ 폐기 내역</span>
+                      </li>
+                      <li class="nav-item  ml-auto">
+                        <a class="nav-link card-header-text-link" href="#" >클공지록</a>
+                      </li>
+                      </ul>
+                  <div class=" content">
+                    <div class="table-responsive">
+                      <table class="table align-items-center no-border-top-table">
+                       <thead>
+                        <tr>
+                          <th>통계</th>
+                          <th>통계</th>
+                          <th>KP DID 통계</th>
+                          <th>통계</th>
+                        </tr>
+                       </thead>
+                        <tbody>
+                          <tr>
+                            <td class="tr-first-row">통계</td>
+                            <td class="tr-first-row">2021.07.14 12:00:00</td>
+                            <td class="tr-first-row">Oxafn__kdf123</td>
+                            <td class="tr-first-row">통계</td>
+                          </tr>
+                          <tr>
+                            <td>통계</td>
+                           <td>2021.07.14 12:00:00</td>
+                           <td>Oxafn__kdf123</td>
+                            <td>통계</td>
+                          </tr>
+                          <tr>
+                            <td>통계</td>
+                           <td>2021.07.14 12:00:00</td>
+                           <td>Oxafn__kdf123</td>
+                            <td>통계</td>
+                          </tr>
+                          <tr>
+                            <td>통계</td>
+                           <td>2021.07.14 12:00:00</td>
+                           <td>Oxafn__kdf123</td>
+                            <td>통계</td>
+                          </tr>
+                          <tr>
+                            <td>통계</td>
+                           <td>2021.07.14 12:00:00</td>
+                           <td>Oxafn__kdf123</td>
+                            <td>통계</td>
+                          </tr>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    </div>
+                  </div>
+                  <div  class=" col-lg-6 col-md-12  col-xs-12 col-sm-12 " >
+                    <ul class="nav">
+                      <li class="nav-item">
+                        <span class="card-header-text" >공지사항 </span>
+                      </li>
+                      <li class="nav-item  ml-auto">
+                        <a class="nav-link card-header-text-link" href="#" >더보기</a>
+                      </li>
+                      </ul>
+                    <div class="content">
+                      <div class="table-responsive ">
+                        <table class="table align-items-center no-border-top-table">
+                        <thead>
+                          <tr>
+                            <th>발행일</th>
+                            <th>지목록</th>
+                          </tr>
+                        </thead>
+                          <tbody>
+                            <tr>
+                              <td class="tr-first-row2">2021.07.14 12:00:00</td>
+                              <td class="tr-first-row2"> 우체국 통합앱 서비스 오픈 신규가입 이벤트 !!</td>
+                            </tr>
+                            <tr>
+                              <td>2021.07.14 12:00:00</td>
+                              <td>우체국 통합앱 서비스 오픈 신규가입 이벤트 !! </td>
+                            </tr>
+                            <tr>
+                              <td>2021.07.14 12:00:00</td>
+                              <td>우체국 통합앱 서비스 오픈 신규가입 이벤트 !!</td>
+                            </tr>
+                            <tr>
+                              <td>2021.07.14 12:00:00</td>
+                              <td>우체국 통합앱 서비스 오픈 신규가입 이벤트 !!</td>
+                            </tr>
+                            <tr>
+                              <td>2021.07.14 12:00:00</td>
+                              <td>우체국 통합앱 서비스 오픈 신규가입 이벤트 !!</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                 
+
+                
+              </div>
+              <!--End Row-->
+              
+              
+              </div>
+              
+           <!-- end container of  row-3 -->
+<div class="container"><div class="row">
+ <!-- footer section start -->
+</div></div>
+             
+
+              <!--start overlay-->
+              <div class="overlay toggle-menu"></div>
+              <!--end overlay-->
+            </div>
+            <!-- End container-fluid-->
+          </div> 
+         <!--End Dashboard Content-->
+
+        </div>
+      </div>
+      
+    </div>
+    <!--End wrapper-->
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- simplebar js -->
+    <script src="assets/plugins/simplebar/js/simplebar.js"></script>
+    <!-- sidebar-menu js -->
+    <script src="assets/js/sidebar-menu.js"></script>
+  
+    <!-- Custom scripts -->
+    <script src="assets/js/app-script.js"></script>
+    <!-- Chart js -->
+    <script src="assets/plugins/Chart.js/Chart.min.js"></script>
+    <script src="assets/plugins/Chart.js/chartjs-script.js"></script>
+    <script src="assets/plugins/Chart.js/Chart.min.js"></script>
+    <!-- Vector map JavaScript -->
+    <script src="assets/plugins/vectormap/jquery-jvectormap-2.0.2.min.js"></script>
+    <script src="assets/plugins/vectormap/jquery-jvectormap-world-mill-en.js"></script>
+    <!-- Easy Pie Chart JS -->
+    <!-- <script src="assets/plugins/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script> -->
+    <!-- Sparkline JS -->
+    <script src="assets/plugins/sparkline-charts/jquery.sparkline.min.js"></script>
+    <script src="assets/plugins/jquery-knob/excanvas.js"></script>
+    <script src="assets/plugins/jquery-knob/jquery.knob.js"></script>
+    <!-- Page Specific -->
+    <script src="assets/js/dashboard.js"></script>
+
+    <script>
+      $(function () {
+        $(".knob").knob();
+      });
+    </script>
+    
+  
+  </body>
+</html>

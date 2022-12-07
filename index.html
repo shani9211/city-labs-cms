@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>통합고객관리포털 -CMS</title>
+    <!--favicon-->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+    <!-- Bootstrap core CSS-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- animate CSS-->
+    <link href="assets/css/animate.css" rel="stylesheet" type="text/css" />
+    <!-- Icons CSS-->
+    <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+    <!-- Custom Style-->
+    <link href="assets/css/app-style.css" rel="stylesheet" />
+    <link href="assets/css/login.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- start loader -->
+    <!-- <div id="pageloader-overlay" class="visible incoming">
+      <div class="loader-wrapper-outer">
+        <div class="loader-wrapper-inner"><div class="loader"></div></div>
+      </div>
+    </div> -->
+    <!-- end loader -->
+
+    <!-- navbar design for login page  -->
+
+    <nav class="navbar navbar-expand-md bg-white">
+      <div class="logo">
+        <a class="navbar-brand" href="#">
+          <img src="assets/images/logo.svg" alt="citylablogo" />
+        </a>
+      </div>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item menu">
+          <a class="nav-link" href="#">통합고객관리자</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav navlogin">
+        <li class="nav-item menu-right-1">
+          <a class="nav-link" href="#">2021-07-21 수요일 </a>
+        </li>
+        <li class="nav-item mt-1">|</li>
+        <li class="nav-item menu-right-2">
+          <a class="nav-link" href="#">로그인</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!--end  navbar design for login page  -->
+
+    <!-- Start wrapper-->
+    <!-- login form-->
+    <div class="container">
+      <div class="mycard">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="leftcontainer">
+              <div class="box">
+                <a class="navbar-brand text-center" href="#">
+                  <img src="assets/images/whitelogo.svg" alt="logo" />
+                </a>
+                <header>통합고객관리포털</header>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="rightcontainer">
+              <form class="loginform">
+                <header>통합고객관리자</header>
+                <div class="form-group">
+                  <label class="mylabel">아이디</label>
+                  <input
+                    type="text"
+                    id="username"
+                    class="myinput"
+                    placeholder="아이디 입력"
+                  />
+                </div>
+                <div class="form-group">
+                  <label class="mylabel">비밀번호</label>
+                  <input
+                    type="password"
+                    id="password"
+                    class="myinput"
+                    placeholder="비밀번호 입력 "
+                  />
+                </div>
+                <div class="message" id="message"></div>
+                <div class="form-group formcheck">
+                  <div class="icheck-material-primary">
+                    <input type="checkbox" id="user-checkbox" checked="" />
+                    <label for="user-checkbox">아이디저장</label>
+                  </div>
+                </div>
+
+                <div class="loginbutton">
+                  <button
+                    type="button"
+                    class="btn btn-ripple btn-primary"
+                    onclick="loginformsubmit()"
+                  >
+                    로그인
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end login form-->
+    <!--wrapper-->
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- sidebar-menu js -->
+    <script src="assets/js/sidebar-menu.js"></script>
+
+    <!-- Custom scripts -->
+    <script src="assets/js/loginform-validation.js"></script>
+    <script src="assets/js/app-script.js"></script>
+  </body>
+</html>

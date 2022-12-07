@@ -1,0 +1,279 @@
+/*
+Template Name: City Lab CMS
+Author: Mackinley & Rice 
+File: Corporate Approval  Style Sheets
+*/
+/* Corporate Approval  page  design css */
+
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined");
+
+.main-card-section {
+  margin: 0;
+  padding: 0;
+}
+.card-section {
+  background-color: transparent;
+  margin-top: 20px;
+}
+/* .card-body-section {
+  margin: 0;
+  padding: 0;
+} */
+
+/* * panel design css */
+.panel {
+  /* padding: 25px !important; */
+  padding: 25px 1px 10px 1px !important;
+}
+
+/* #search-container,
+#date-container {
+  margin-left: 0 !important;
+} */
+
+.select1 {
+  padding: 8px 30px;
+  border: 1px solid #bababa;
+  border-radius: 4px;
+  width: 100%;
+}
+.search-bar input {
+  border-radius: unset;
+  border: none;
+  border-bottom: 1px solid #bababa;
+  width: 75vw;
+}
+
+.input-group.date {
+  margin-right: 10px;
+}
+
+.input-group input {
+  border: none !important;
+  transform: translateY(-2px);
+  padding: 0 !important;
+}
+
+.input-group.date,
+.input-group.search {
+  border-bottom: 1px solid rgb(187, 183, 183) !important;
+  border-radius: 2px;
+}
+
+.input-group .icon {
+  transform: translateY(8px) !important;
+}
+
+.table-subtitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #909090;
+}
+
+#data-datatable_wrapper {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+#data-datatable th {
+  border-bottom: none;
+  border-top: none;
+}
+
+#data-download-type {
+  height: 100%;
+  border-color: rgb(185, 184, 184);
+  background: white;
+  border-radius: 2px;
+  padding: 0 20px;
+  transform: translateY(2px);
+}
+
+#datatable-download-btn {
+  background-color: #7d5ce9;
+  color: white;
+  padding: 12px 12px;
+}
+
+#data-datatable .btn-ripple {
+  width: 100%;
+  color: white;
+  background: grey;
+}
+
+div.table-responsive > div.dataTables_wrapper > div.row {
+  flex-direction: row-reverse;
+}
+
+div.dataTables_wrapper div.dataTables_filter {
+  display: none;
+}
+
+div.dataTables_wrapper div.dataTables_filter input {
+  display: none;
+}
+.dataTables_length {
+  text-align: right;
+}
+
+.confirmation_message {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 25px;
+  color: #dd695d;
+}
+
+.validation_message {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 25px;
+  color: #dd695d;
+  text-align: center;
+}
+
+.certificate_discard {
+  height: 200px;
+  padding: 30px 10px 10px 10px;
+}
+
+.dropdown-menu {
+  width: 300px !important;
+  height: auto !important;
+}
+
+.form-control:disabled {
+  background-color: transparent;
+  opacity: 1;
+  border-radius: unset;
+  border: none;
+}
+
+/********************************** Modal design******************************************  */
+.custom-modal-width {
+  max-width: 40%;
+  margin-left: 15%;
+}
+
+.custom_modal_dimension {
+  width: 432px;
+  height: 452px;
+}
+.modal-title {
+  padding-top: 20px;
+}
+.disposal-textarea {
+  border-radius: unset;
+  border-left: none;
+  border-right: none;
+}
+.disposal-cancel {
+  background-color: #909090;
+  border-radius: 8px;
+  border-color: #909090;
+  text-align: center;
+  width: 126px;
+  height: 48px;
+}
+.disposal-cancel:hover {
+  background-color: #909090;
+  border-radius: 8px;
+  border-color: #909090;
+}
+.disposal-success {
+  width: 100px;
+  border-radius: 8px;
+  height: 48px;
+  width: 126px;
+}
+.modal-footer-row {
+  width: 100%;
+  display: flex;
+}
+
+.disposal-confirmation-text {
+  padding: 50px 20px 30px 30px;
+}
+
+.no-border {
+  border-right: none;
+}
+.view_details_body {
+  padding-left: 28px;
+  padding-right: 30px;
+}
+/**********************************End  Modal design******************************************  */
+
+#certificate-issuence-list_wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+.searchInput {
+  display: none;
+}
+
+.top-table {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  padding-bottom: 20px;
+}
+
+.dataTables_wrapper {
+  padding-left: 0;
+  padding-right: 0;
+}
+.card-table {
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.btn-outline-primary {
+  border-color: #dd695d;
+
+  color: #dd695d;
+  margin-right: 20px;
+}
+.btn-outline-primary:hover {
+  background-color: #dd695d;
+  border-color: #dd695d;
+}
+
+table.dataTable thead th {
+  border-bottom: none;
+}
+
+/********************************** Table data sorting dropdown css******************************************  */
+.top-table {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  padding-bottom: 20px;
+  align-items: baseline;
+}
+div.dataTables_wrapper div.dataTables_length select {
+  width: 100px;
+  height: 37px;
+  padding: 4px 8px 5px 15px;
+}
+
+/* div.dataTables_wrapper div.dataTables_length select {
+  width: 100px;
+  height: 37px;
+  padding-bottom: 7px;
+} */
+.top-table {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  padding-bottom: 20px;
+  align-items: baseline;
+}
+
+/********************************** Table data sorting dropdown css******************************************  */
